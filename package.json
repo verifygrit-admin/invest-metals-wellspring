@@ -1,0 +1,15 @@
+{
+  "name": "invest-metals-tooling",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate-data.mjs",
+    "validate": "node tools/validate-all.mjs",
+    "test": "node --test",
+    "build:site": "rm -rf _site && mkdir -p _site && cp -r app/. _site/ && cp -r data/. _site/data/",
+    "serve": "npx --yes serve _site"
+  },
+  "devDependencies": {
+    "ajv-cli": "^5.0.0"
+  }
+}
