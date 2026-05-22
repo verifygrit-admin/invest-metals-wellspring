@@ -1,0 +1,758 @@
+{
+  "gold": {
+    "near": {
+      "winners": [
+        {
+          "actor": "centralGov",
+          "rationale": "Reserve diversification keeps a steady bid; buyers sit on appreciating holdings."
+        },
+        {
+          "actor": "financial",
+          "rationale": "ETF issuers and bullion banks gain on inflows and elevated turnover."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Electronics and dental buyers face higher input costs with no substitute."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Sustained high prices lift miner margins and cash flow."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Continued accumulation looks validated if the monetary bid holds."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Industrial users keep absorbing cost; some demand destruction at the margin."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "centralGov",
+          "rationale": "If de-dollarisation persists, reserve gold is a long-horizon store of value."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "trader",
+          "rationale": "Tight, well-arbitraged markets compress the spreads traders live on."
+        }
+      ]
+    }
+  },
+  "silver": {
+    "near": {
+      "winners": [
+        {
+          "actor": "financial",
+          "rationale": "Rides gold's monetary bid; ETF flows amplify the move."
+        },
+        {
+          "actor": "major",
+          "rationale": "Primary silver miners gain operating leverage on a rising price."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Solar and electronics manufacturers face a rising, volatile input cost."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Industrial (solar) demand plus the monetary bid supports producer revenue."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Solar makers pressured to thrift silver per cell or substitute."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Thrifting and substitution R&D pays off; cost exposure falls."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Per-unit industrial demand erodes as buyers design silver out."
+        }
+      ]
+    }
+  },
+  "platinum": {
+    "near": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Producer discipline and a firm price support South African miner margins."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "Producing states benefit from steadier export revenue."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Autocatalyst buyers face cost pressure amid supply restructuring."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Hydrogen fuel-cell and electrolyzer makers gain as platinum demand pivots toward them."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Diesel-autocatalyst demand keeps shrinking; volume base narrows."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "If hydrogen scales, platinum's new demand pillar favours fuel-cell integrators."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Structural EV substitution erodes the legacy autocatalyst market the majors depend on."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "Producing states face a long decline in a core export unless hydrogen offsets it."
+        }
+      ]
+    }
+  },
+  "palladium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "trader",
+          "rationale": "Volatility in a thin market creates trading spreads."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "Russia and South Africa face soft export revenue on a weak price."
+        },
+        {
+          "actor": "major",
+          "rationale": "Producer margins squeezed as the price stays pressured."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Gasoline-autocatalyst buyers benefit from cheaper, well-supplied palladium."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Continued EV substitution keeps demand and price under pressure."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Remaining ICE producers enjoy a structurally cheap input."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Palladium is the most EV-exposed PGM; long-run demand decline hits producers hardest."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "A core export erodes with little hydrogen-style offset."
+        }
+      ]
+    }
+  },
+  "rhodium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "trader",
+          "rationale": "Extreme thinness makes rhodium a trader's market on any volatility."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Autocatalyst makers exposed to sharp, unpredictable price spikes."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Tight supply can spike the price, rewarding the few producers."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "No substitute for rhodium's emissions role; buyers bear the volatility."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "EV transition eventually shrinks the autocatalyst need that drives rhodium risk."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "The same transition removes rhodium's near-sole demand source."
+        },
+        {
+          "actor": "trader",
+          "rationale": "A shrinking market offers less volume to trade."
+        }
+      ]
+    }
+  },
+  "lithium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "China's permitting cuts tighten supply, supporting price for those still producing."
+        },
+        {
+          "actor": "major",
+          "rationale": "Low-cost majors gain as high-cost supply exits."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Battery makers face a firming input cost after the long price slide."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "As the surplus closes, surviving producers regain pricing power."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "trader",
+          "rationale": "A rebalancing market narrows the dislocations traders exploited."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Vertically integrated battery makers with locked offtake secure supply on their terms."
+        },
+        {
+          "actor": "major",
+          "rationale": "Structural EV/storage demand growth rewards established producers."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "New entrants (Africa, the Americas) erode any single state's leverage over time."
+        }
+      ]
+    }
+  },
+  "cobalt": {
+    "near": {
+      "winners": [
+        {
+          "actor": "trader",
+          "rationale": "Glencore-style traders profit from moving a concentrated, opaque supply."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Oversupply keeps the price soft, pressuring producer margins."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Battery makers benefit from cheap, well-supplied cobalt — and from chemistries using less of it."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "DRC sees soft revenue from a price-pressured core export."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Low-/no-cobalt cathode chemistries reduce buyers' exposure entirely."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Thrifting and substitution shrink the addressable market."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "The DRC's concentration advantage matters less as demand-per-battery falls."
+        }
+      ]
+    }
+  },
+  "nickel": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "Indonesia's low-cost supply lets it gain share even on a weak price."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Higher-cost producers elsewhere are squeezed below the cost line."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Stainless and battery makers benefit from abundant, cheap nickel."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Idled and deferred non-Indonesian operations keep bleeding."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "Indonesia consolidates a dominant, policy-shaped position in the market."
+        },
+        {
+          "actor": "endUser",
+          "rationale": "Battery makers gain a secure, large-volume supply base."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "major",
+          "rationale": "Producers outside Indonesia struggle to compete structurally on cost."
+        }
+      ]
+    }
+  },
+  "copper": {
+    "near": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Energy-transition demand against tight supply supports producer margins."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "Chile and Peru benefit from firm export revenue."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Grid, construction and EV makers face a rising, structural input cost."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "A widening supply gap keeps pricing power with established producers."
+        },
+        {
+          "actor": "financial",
+          "rationale": "A liquid, trending market rewards positioned investors."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Electrification buyers absorb sustained cost inflation."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "If new supply stays constrained, the electrification era favours copper producers for years."
+        },
+        {
+          "actor": "prodState",
+          "rationale": "Copper-rich states gain durable strategic and fiscal leverage."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Long-run cost pressure unless substitution (aluminium) or recycling scales."
+        }
+      ]
+    }
+  },
+  "graphite": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "China's export licensing gives it pricing leverage over the anode supply."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Western governments funding alternatives gain strategic ground."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Battery makers outside China face supply uncertainty and licensing delay."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Non-Chinese graphite developers gain as buyers seek diversification."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Anode supply remains exposed to policy risk until alternatives mature."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Synthetic graphite and diversified natural supply reduce buyers' China dependence."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Friend-shoring investment pays off as a resilient supply base."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "China's licensing leverage erodes as the world builds around it."
+        }
+      ]
+    }
+  },
+  "neodymium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "China's REE groups and export policy hold decisive near-term leverage."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Magnet and EV-motor makers face supply and price uncertainty."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "centralGov",
+          "rationale": "Western stockpiling and financed processing begin to bear fruit."
+        },
+        {
+          "actor": "major",
+          "rationale": "Non-Chinese producers (MP, Lynas) gain as buyers diversify."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Magnet supply stays policy-exposed through the transition."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "A diversified magnet supply chain finally lowers buyer risk."
+        },
+        {
+          "actor": "major",
+          "rationale": "Established non-Chinese producers hold durable share."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "China's structural dominance erodes as alternatives scale — though slowly."
+        }
+      ]
+    }
+  },
+  "dysprosium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "Heavy-REE supply is the tightest chokepoint; China's leverage is at its peak."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "High-temperature-magnet makers are acutely exposed to export controls."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "centralGov",
+          "rationale": "Stockpiles and the Malaysia heavy-REE chain offer the first real alternatives."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Heavy-REE alternatives mature slower than light-REE ones; risk persists."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Whoever builds non-Chinese heavy-REE separation captures durable, scarce value."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Strategic resilience finally achieved on the hardest chokepoint."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "China's heavy-REE monopoly weakens last, but it does weaken."
+        }
+      ]
+    }
+  },
+  "gallium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "China holds near-total leverage; export policy directly sets the terms."
+        },
+        {
+          "actor": "trader",
+          "rationale": "Licensing-driven scarcity creates wide spreads for those who can source metal."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "GaN/GaAs chip and defense makers face a weaponised, uncertain supply."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "centralGov",
+          "rationale": "Western funding for alternative gallium recovery begins to reduce dependence."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Inventory buffers tie up capital; supply stays policy-hostage."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Recovered and recycled gallium plus new capacity restore supply security."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Diversification investment pays off strategically."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "China's 98% chokehold is a wasting asset once the world builds around it."
+        }
+      ]
+    }
+  },
+  "germanium": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "Same as gallium: byproduct concentration plus licensing equals near-term leverage."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Fiber-optic, infrared and satellite-cell makers face acute supply risk."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Diversified miners and recyclers (e.g. zinc-stream operators) gain as buyers seek alternatives."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Specialty-optics supply stays exposed until recovery capacity scales."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Recycling and diversified byproduct recovery rebuild supply resilience."
+        },
+        {
+          "actor": "centralGov",
+          "rationale": "Strategic stockpiles and allied supply blunt the chokepoint."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "China's germanium leverage decays as alternatives come online."
+        }
+      ]
+    }
+  },
+  "tin": {
+    "near": {
+      "winners": [
+        {
+          "actor": "prodState",
+          "rationale": "Concentrated producers (Indonesia, China, Myanmar) hold supply leverage."
+        },
+        {
+          "actor": "trader",
+          "rationale": "A scattered supply base creates arbitrage for traders."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Electronics-solder buyers face a firm price with no easy substitute."
+        }
+      ]
+    },
+    "mid": {
+      "winners": [
+        {
+          "actor": "major",
+          "rationale": "Non-Chinese tin producers gain as electronics demand holds."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "endUser",
+          "rationale": "Solder demand keeps tin costs structurally embedded in electronics."
+        }
+      ]
+    },
+    "long": {
+      "winners": [
+        {
+          "actor": "endUser",
+          "rationale": "Substitution research and tighter solder use slowly reduce exposure."
+        }
+      ],
+      "losers": [
+        {
+          "actor": "prodState",
+          "rationale": "Scattered, partly informal supply makes any one state's leverage fragile."
+        }
+      ]
+    }
+  }
+}

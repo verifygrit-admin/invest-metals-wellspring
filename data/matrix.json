@@ -1,0 +1,465 @@
+{
+  "actors": {
+    "prodState": {
+      "label": "Producer-states & state-owned miners",
+      "short": "State producers",
+      "desc": "Governments that mine or refine directly (Codelco, Chinese REE groups, PT Timah, Nornickel)."
+    },
+    "major": {
+      "label": "Private diversified mining majors",
+      "short": "Mining majors",
+      "desc": "Investor-owned producers — BHP, Rio Tinto, Glencore, Freeport, Anglo American."
+    },
+    "trader": {
+      "label": "Commodity traders & merchants",
+      "short": "Traders",
+      "desc": "Firms that market and move physical metal — Glencore (trading arm), Trafigura."
+    },
+    "financial": {
+      "label": "Financial institutions",
+      "short": "Financial",
+      "desc": "Asset managers, ETF issuers, bullion banks — BlackRock, State Street, Sprott, JPMorgan."
+    },
+    "centralGov": {
+      "label": "Central banks & treasuries",
+      "short": "Central banks / treasuries",
+      "desc": "States acting as reserve buyers, stockpilers, financiers — PBoC, US DLA, defense stockpiles."
+    },
+    "endUser": {
+      "label": "Large end-users (vertical integrators)",
+      "short": "End-users",
+      "desc": "Battery, auto, magnet, electronics firms securing supply upstream — CATL, Toyota, LG."
+    }
+  },
+  "levers": {
+    "physical": {
+      "label": "Physical supply",
+      "desc": "Controlling how much metal exists — mining, capacity expansion/deferral, refining bottleneck.",
+      "vectors": [
+        "extraction",
+        "processing"
+      ]
+    },
+    "tradePolicy": {
+      "label": "Trade & policy",
+      "desc": "Export controls, tariffs, sanctions, licensing — changes where metal can go, not how much exists.",
+      "vectors": [
+        "extraction",
+        "processing",
+        "application"
+      ]
+    },
+    "accumulate": {
+      "label": "Strategic accumulation",
+      "desc": "Buying and holding to remove metal from the market — reserves, national stockpiles.",
+      "vectors": [
+        "application"
+      ]
+    },
+    "financial": {
+      "label": "Financial positioning",
+      "desc": "Moving price via futures, ETFs and paper claims without holding physical metal.",
+      "vectors": [
+        "application"
+      ]
+    },
+    "offtake": {
+      "label": "Offtake & contracts",
+      "desc": "Locking future supply through long-term purchase agreements and equity stakes in producers.",
+      "vectors": [
+        "extraction",
+        "processing",
+        "application"
+      ]
+    }
+  },
+  "matrix": {
+    "gold": {
+      "prodState": {
+        "physical": 1,
+        "tradePolicy": 0,
+        "offtake": 0
+      },
+      "major": {
+        "physical": 2,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 3,
+        "accumulate": 1,
+        "offtake": 0
+      },
+      "centralGov": {
+        "accumulate": 3,
+        "financial": 1
+      },
+      "endUser": {
+        "offtake": 0,
+        "physical": 0
+      }
+    },
+    "silver": {
+      "prodState": {
+        "physical": 1
+      },
+      "major": {
+        "physical": 2,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 3,
+        "accumulate": 1
+      },
+      "centralGov": {
+        "accumulate": 1
+      },
+      "endUser": {
+        "offtake": 1,
+        "physical": 0
+      }
+    },
+    "platinum": {
+      "prodState": {
+        "physical": 2,
+        "tradePolicy": 1
+      },
+      "major": {
+        "physical": 3,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 2,
+        "accumulate": 1
+      },
+      "centralGov": {
+        "accumulate": 1
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 0
+      }
+    },
+    "palladium": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 2
+      },
+      "major": {
+        "physical": 2,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 2
+      },
+      "centralGov": {
+        "accumulate": 1,
+        "tradePolicy": 1
+      },
+      "endUser": {
+        "offtake": 2
+      }
+    },
+    "rhodium": {
+      "prodState": {
+        "physical": 2,
+        "tradePolicy": 1
+      },
+      "major": {
+        "physical": 3,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 1
+      },
+      "centralGov": {
+        "accumulate": 0
+      },
+      "endUser": {
+        "offtake": 2
+      }
+    },
+    "lithium": {
+      "prodState": {
+        "physical": 2,
+        "tradePolicy": 1,
+        "offtake": 1
+      },
+      "major": {
+        "physical": 3,
+        "offtake": 2
+      },
+      "trader": {
+        "physical": 1,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 2
+      },
+      "centralGov": {
+        "accumulate": 1,
+        "tradePolicy": 1
+      },
+      "endUser": {
+        "offtake": 3,
+        "physical": 1
+      }
+    },
+    "cobalt": {
+      "prodState": {
+        "physical": 2,
+        "tradePolicy": 1,
+        "offtake": 1
+      },
+      "major": {
+        "physical": 3,
+        "offtake": 2
+      },
+      "trader": {
+        "physical": 3,
+        "financial": 1,
+        "offtake": 2
+      },
+      "financial": {
+        "financial": 1
+      },
+      "centralGov": {
+        "accumulate": 1,
+        "tradePolicy": 1
+      },
+      "endUser": {
+        "offtake": 3,
+        "physical": 1
+      }
+    },
+    "nickel": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 2
+      },
+      "major": {
+        "physical": 2,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 2,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 2
+      },
+      "centralGov": {
+        "tradePolicy": 1,
+        "accumulate": 1
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "copper": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 1
+      },
+      "major": {
+        "physical": 3,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 2,
+        "financial": 2
+      },
+      "financial": {
+        "financial": 2
+      },
+      "centralGov": {
+        "accumulate": 1,
+        "tradePolicy": 1
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "graphite": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 3
+      },
+      "major": {
+        "physical": 1,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 0
+      },
+      "centralGov": {
+        "tradePolicy": 2,
+        "accumulate": 1
+      },
+      "endUser": {
+        "offtake": 3,
+        "physical": 1
+      }
+    },
+    "neodymium": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 3,
+        "offtake": 1
+      },
+      "major": {
+        "physical": 1,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 0
+      },
+      "centralGov": {
+        "tradePolicy": 3,
+        "accumulate": 2
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "dysprosium": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 3,
+        "offtake": 1
+      },
+      "major": {
+        "physical": 1,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 0
+      },
+      "centralGov": {
+        "tradePolicy": 3,
+        "accumulate": 2
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "gallium": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 3
+      },
+      "major": {
+        "physical": 0
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 0
+      },
+      "centralGov": {
+        "tradePolicy": 3,
+        "accumulate": 2
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "germanium": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 3
+      },
+      "major": {
+        "physical": 1
+      },
+      "trader": {
+        "physical": 1
+      },
+      "financial": {
+        "financial": 0
+      },
+      "centralGov": {
+        "tradePolicy": 3,
+        "accumulate": 2
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    },
+    "tin": {
+      "prodState": {
+        "physical": 3,
+        "tradePolicy": 2
+      },
+      "major": {
+        "physical": 1,
+        "offtake": 1
+      },
+      "trader": {
+        "physical": 2,
+        "financial": 1
+      },
+      "financial": {
+        "financial": 2
+      },
+      "centralGov": {
+        "accumulate": 1,
+        "tradePolicy": 1
+      },
+      "endUser": {
+        "offtake": 2,
+        "physical": 1
+      }
+    }
+  },
+  "reading": {
+    "gold": "Movers cluster in the financial and accumulation columns — central banks and ETF issuers, not miners, set the price. A monetary asset.",
+    "silver": "Split personality: financial positioning dominates, but physical supply from mining majors matters more than for gold.",
+    "platinum": "Physical-supply column dominates — a handful of South African majors. Concentrated operational and country risk.",
+    "palladium": "Physical supply plus a real trade-policy weight from Russia. Producer concentration is the core risk.",
+    "rhodium": "Almost purely a physical-supply story, and a tiny one — few producers, thin market, extreme price sensitivity.",
+    "lithium": "Mining majors plus aggressive end-user offtake — battery makers lock up supply by contract. Watch the offtake column.",
+    "cobalt": "Unusually broad: majors, traders (Glencore), and end-users all pull hard. Trader influence is a distinctive feature.",
+    "nickel": "State producers (Indonesia, Russia) plus majors. Trade policy carries real weight via Indonesian export rules.",
+    "copper": "Broad and liquid — state and private producers plus genuine financial positioning on deep futures markets.",
+    "graphite": "Trade-policy column lights up: Chinese export licensing is a primary mover, alongside end-user offtake.",
+    "neodymium": "Dominated by the state-producer and trade-policy columns — China's REE groups and Ministry of Commerce.",
+    "dysprosium": "Most concentrated profile on the board — state production and trade policy, with heavy-REE supply even tighter than light REEs.",
+    "gallium": "Trade-policy column is decisive — a near-pure China policy instrument since the 2023-24 export controls.",
+    "germanium": "Same shape as gallium: a byproduct metal turned policy lever through Chinese export licensing.",
+    "tin": "State producers plus traders, with modest financial positioning — a quiet metal that is a direct bet on electronics solder."
+  }
+}

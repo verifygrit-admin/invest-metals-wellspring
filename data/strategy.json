@@ -1,0 +1,319 @@
+{
+  "families": {
+    "pricing": {
+      "label": "Pricing strategies",
+      "desc": "Act on price or quantity directly — production discipline, inventory, offtake, financial positioning. Used mostly by producers, traders and financial actors.",
+      "color": "#5b9bd5"
+    },
+    "permission": {
+      "label": "Permission strategies",
+      "desc": "Act on who is allowed to do what — export licensing, tariffs, sanctions, permitting, investment screening. Almost exclusively government instruments.",
+      "color": "#d4a843"
+    }
+  },
+  "strategies": {
+    "exportControl": {
+      "name": "Export licensing & controls",
+      "family": "permission",
+      "lever": "tradePolicy",
+      "depth": "case",
+      "mechanism": "A producing or refining state requires licenses for, restricts, or bans the export of a metal or its processing technology. This does not change how much metal exists — it changes who may receive it. Because the license process is discretionary and slow, even a licensing regime short of an outright ban chokes flow and forces buyers to bid up scarce out-of-country material while in-country prices stay lower. It is most potent when one country dominates processing, since alternatives cannot ramp quickly.",
+      "whoUses": "Producer-states with processing dominance — overwhelmingly China.",
+      "instances": [
+        {
+          "date": "Jul–Aug 2023",
+          "metals": [
+            "gallium",
+            "germanium"
+          ],
+          "text": "China's Ministry of Commerce announced export licensing on gallium and germanium products effective 1 August 2023, citing national security. Wrought-metal exports collapsed in the first month and gallium rose roughly 18–27% over the following weeks as buyers scrambled for out-of-country material."
+        },
+        {
+          "date": "Oct 2023",
+          "metals": [
+            "graphite"
+          ],
+          "text": "China extended export licensing to certain graphite products — the dominant battery anode material — widening the same playbook to a battery-supply input."
+        },
+        {
+          "date": "Aug 2024",
+          "metals": [
+            "tin"
+          ],
+          "text": "China announced licensing on antimony (a related minor metal); over the following months antimony shipments to the US fell ~97% and prices roughly doubled — a precedent showing how precisely licensing can be targeted. (Tagged here as the nearest in-roster minor metal.)"
+        },
+        {
+          "date": "Dec 2024",
+          "metals": [
+            "gallium",
+            "germanium"
+          ],
+          "text": "Licensing escalated to an outright ban on gallium, germanium and antimony exports specifically to the United States, including the technology to process them."
+        },
+        {
+          "date": "Apr 2025",
+          "metals": [
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "China placed seven medium and heavy rare earths — including dysprosium and terbium — and related magnets under export control, applied to all countries."
+        },
+        {
+          "date": "Nov 2025",
+          "metals": [
+            "gallium",
+            "germanium",
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "Following a US–China trade agreement, China suspended the October 2025 rare-earth controls and the US-specific gallium/germanium ban for one year (to ~Nov 2026) — showing the instrument can reverse quickly, so the policy itself is a source of price volatility."
+        }
+      ],
+      "reading": "The defining permission strategy for the minor and rare-earth metals. Note the escalation ladder — licensing, then country-specific ban, then technology controls — and the reversibility: a suspended control is still a standing threat, which keeps a risk premium in the price."
+    },
+    "permitThrottle": {
+      "name": "Permitting & administrative throttle",
+      "family": "permission",
+      "lever": "tradePolicy",
+      "depth": "case",
+      "mechanism": "A government uses domestic mining licenses, permit renewals, reserve audits and environmental review as a supply valve. Letting a permit lapse, or signalling that renewal is uncertain, removes output without any explicit trade measure. It is framed as routine administration, which makes it less visible than an export ban but equally market-moving — and it can be aimed at curbing domestic overcapacity as much as at external leverage.",
+      "whoUses": "Producer-states over their own mining sector — notably China.",
+      "instances": [
+        {
+          "date": "Jul 2024",
+          "metals": [
+            "lithium"
+          ],
+          "text": "China's revised Mineral Resources Law centralized mining permits under the Ministry of Natural Resources, closing loopholes that had let local governments permit lithium-bearing industrial-mineral operations."
+        },
+        {
+          "date": "Aug 2025",
+          "metals": [
+            "lithium"
+          ],
+          "text": "CATL's Jianxiawo mine in Yichun — on the order of 3–6% of global lithium supply — suspended operations after its mining license expired. Lithium carbonate prices on the Guangzhou exchange jumped, and lithium equities rallied worldwide on expectations of broader production discipline."
+        },
+        {
+          "date": "Sep 2025",
+          "metals": [
+            "lithium"
+          ],
+          "text": "Authorities requested reserve reports from eight further miners around Yichun; several proactively cut output, with industry estimates that 15–20% of the area's production could be paused — administrative review functioning as a supply throttle."
+        }
+      ],
+      "reading": "A quieter cousin of export control. The lithium case shows a government tightening domestic supply through permits to rebalance an oversupplied market — the price effect rivalled an export measure while never being labelled a trade action."
+    },
+    "stockpilePolicy": {
+      "name": "Strategic stockpiling & friend-shoring finance",
+      "family": "permission",
+      "lever": "accumulate",
+      "depth": "entry",
+      "mechanism": "A consuming government builds a strategic reserve of a metal, and/or finances and offtakes from non-dominant producers, to blunt another state's supply leverage. This both removes near-term metal from the open market (tightening it) and, over time, seeds alternative supply (loosening it).",
+      "whoUses": "Consuming-state treasuries and defense agencies — US, allied governments.",
+      "instances": [
+        {
+          "date": "2025",
+          "metals": [
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "The US took an equity stake in domestic rare-earth producer MP Materials and made loan and offtake commitments to build non-Chinese processing capacity."
+        },
+        {
+          "date": "Oct 2025",
+          "metals": [
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "A US–Australia framework committed to heavy-rare-earth investment via strategic stockpiles, price support and a $1bn financing pledge; an MoU with Malaysia followed, covering the only operating heavy-REE chain outside China."
+        }
+      ],
+      "reading": "The Western counter-move to export control. Its effect on price is two-sided: accumulation tightens the market now, while financed new supply is intended to loosen it later."
+    },
+    "tariffPolicy": {
+      "name": "Tariffs & investment screening",
+      "family": "permission",
+      "lever": "tradePolicy",
+      "depth": "entry",
+      "mechanism": "Import tariffs, or screening of foreign ownership of mines and processors, redirect trade flows and shift where metal is profitably sold or built. Slower-acting than export bans but structural.",
+      "whoUses": "Both producing and consuming states.",
+      "instances": [
+        {
+          "date": "2024–2025",
+          "metals": [
+            "nickel",
+            "lithium",
+            "cobalt"
+          ],
+          "text": "US and EU measures (Inflation Reduction Act sourcing rules, Critical Raw Materials Act) conditioned incentives on non-Chinese supply, reshaping where battery-metal processing is built."
+        },
+        {
+          "date": "ongoing",
+          "metals": [
+            "lithium",
+            "copper"
+          ],
+          "text": "Several producing states tightened foreign-investment screening over strategic mines, affecting who may own extraction capacity."
+        }
+      ],
+      "reading": "A structural, slow lever — it rarely moves a spot price in a week, but it redraws the map of where the next decade's supply is located."
+    },
+    "productionDiscipline": {
+      "name": "Production discipline & curtailment",
+      "family": "pricing",
+      "lever": "physical",
+      "depth": "case",
+      "mechanism": "Producers cut output, mothball mines, or defer expansions to stop a price slide and pull a market back toward balance. It can be involuntary (high-cost mines losing money) or strategic (a deliberate floor). Unlike a ban it genuinely removes metal from the world — the classic supply-side response to oversupply.",
+      "whoUses": "Mining majors and state producers; strongest where a few producers hold large share.",
+      "instances": [
+        {
+          "date": "Through 2024",
+          "metals": [
+            "lithium"
+          ],
+          "text": "After lithium carbonate fell from ~$71k/t (Jan 2023) toward ~$10k/t, Australian spodumene producers Pilbara Minerals and Mineral Resources curtailed output and mothballed assets; high-cost Chinese lepidolite production roughly halved from its mid-2024 peak."
+        },
+        {
+          "date": "2024",
+          "metals": [
+            "nickel"
+          ],
+          "text": "Nickel operations were idled or deferred in several jurisdictions as a surge of low-cost Indonesian supply pushed prices below the cost line for higher-cost mines."
+        },
+        {
+          "date": "2024–2025",
+          "metals": [
+            "platinum",
+            "palladium",
+            "rhodium"
+          ],
+          "text": "Facing weak palladium and rhodium prices, South African PGM producers (Anglo American Platinum, Impala, Sibanye-Stillwater) announced restructuring, shaft closures and capital deferrals — output discipline in a market pressured by the shift away from internal-combustion autos."
+        },
+        {
+          "date": "2025",
+          "metals": [
+            "lithium"
+          ],
+          "text": "Analysts framed the cumulative Chinese and Western lithium cutbacks as narrowing the surplus toward balance — production discipline doing what policy alone could not."
+        }
+      ],
+      "reading": "The textbook pricing strategy. The lithium episode shows both forms at once: involuntary closures of loss-making mines, plus a deliberate hope that discipline would establish a price floor."
+    },
+    "offtakeContracts": {
+      "name": "Long-term offtake & equity contracts",
+      "family": "pricing",
+      "lever": "offtake",
+      "depth": "entry",
+      "mechanism": "Large end-users (battery, auto, magnet makers) sign multi-year purchase agreements or take equity in producers to lock future supply at negotiated terms. This removes volume from the spot market and fixes price away from the published benchmark — the visible spot price can understate how much metal is actually already committed.",
+      "whoUses": "Vertically integrating end-users — CATL, automakers, magnet makers — and the producers who counterparty them.",
+      "instances": [
+        {
+          "date": "ongoing",
+          "metals": [
+            "lithium",
+            "cobalt",
+            "graphite"
+          ],
+          "text": "Battery makers and automakers signed extensive multi-year offtake deals and took direct stakes in lithium, cobalt and graphite producers to secure cathode and anode feedstock."
+        },
+        {
+          "date": "2025",
+          "metals": [
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "Magnet and defense buyers contracted future rare-earth supply from non-Chinese projects, sometimes with government backing, to guarantee volume regardless of spot conditions."
+        }
+      ],
+      "reading": "A pricing lever that hides in plain sight: it moves the *available* market without necessarily moving the quoted price, so a dashboard tracking spot prices alone would miss it."
+    },
+    "inventoryManagement": {
+      "name": "Inventory & stockpile timing",
+      "family": "pricing",
+      "lever": "physical",
+      "depth": "entry",
+      "mechanism": "Producers, traders and large consumers build or release physical inventory to smooth — or exploit — price swings. Releasing stock into a spike caps it; building stock in a trough cushions a producer. Downstream buffer-building in response to supply fear can itself tighten a market.",
+      "whoUses": "Traders, producers, and large end-users.",
+      "instances": [
+        {
+          "date": "2024–2025",
+          "metals": [
+            "gallium",
+            "germanium"
+          ],
+          "text": "After the export controls, semiconductor, defense and solar buyers built precautionary inventory buffers they had not previously needed — tying up capital and adding a layer of demand that tightened the market beyond the underlying shortfall."
+        }
+      ],
+      "reading": "Often a second-order effect: a permission strategy elsewhere triggers defensive inventory behaviour that becomes a pricing force in its own right."
+    },
+    "financialPositioning": {
+      "name": "Financial positioning (futures & ETFs)",
+      "family": "pricing",
+      "lever": "financial",
+      "depth": "entry",
+      "mechanism": "Investors move price through paper claims — futures, options and exchange-traded funds — without holding physical metal. Fund inflows can lift a price well beyond what physical fundamentals justify, and speculative trading can magnify a real supply change several-fold.",
+      "whoUses": "Asset managers, ETF issuers, bullion banks, speculative funds.",
+      "instances": [
+        {
+          "date": "2024–2026",
+          "metals": [
+            "gold",
+            "silver"
+          ],
+          "text": "Sustained inflows into gold and silver ETFs, alongside record central-bank gold buying, drove gold sharply higher — a price set far more by investment flows than by mine output or industrial use."
+        },
+        {
+          "date": "2024–2026",
+          "metals": [
+            "platinum",
+            "palladium"
+          ],
+          "text": "Platinum and palladium are exchange-traded with their own ETFs; fund flows and futures positioning move their prices alongside autocatalyst fundamentals, though less dominantly than for gold."
+        },
+        {
+          "date": "Nov 2024",
+          "metals": [
+            "lithium"
+          ],
+          "text": "On the CATL mine-restart news, the lithium futures price correction (~11%) was estimated to exceed the fundamental supply change three- to four-fold — speculative positioning amplifying a modest physical move."
+        }
+      ],
+      "reading": "The dominant pricing strategy for gold and silver and a real amplifier for exchange-traded industrial metals — but largely absent for the minor and rare-earth metals, which have no deep paper market."
+    },
+    "producerCoordination": {
+      "name": "Producer coordination",
+      "family": "pricing",
+      "lever": "physical",
+      "depth": "entry",
+      "mechanism": "Producers — formally or tacitly — align output or inventory decisions to influence price, an OPEC-style dynamic. Easiest where supply is concentrated in few hands and a state can direct producers; harder, and legally constrained, in fragmented private markets.",
+      "whoUses": "Producer-states and consolidated producer groups.",
+      "instances": [
+        {
+          "date": "ongoing",
+          "metals": [
+            "neodymium",
+            "dysprosium"
+          ],
+          "text": "China's consolidation of rare-earth mining and processing into a small number of state groups gives output decisions an effectively coordinated character, supporting price management."
+        },
+        {
+          "date": "2025",
+          "metals": [
+            "lithium"
+          ],
+          "text": "Chinese measures discouraging sales of lithium at unsustainably low prices, alongside the permit-driven cuts, functioned as soft coordinated discipline across producers."
+        },
+        {
+          "date": "structural",
+          "metals": [
+            "platinum",
+            "palladium",
+            "rhodium"
+          ],
+          "text": "PGM supply sits with a handful of South African and Russian producers; this concentration means individual output and inventory decisions carry market-wide weight even without formal coordination."
+        }
+      ],
+      "reading": "Most feasible where the state has already consolidated producers — which is why it appears for rare earths and Chinese lithium rather than for the fragmented private metals."
+    }
+  }
+}

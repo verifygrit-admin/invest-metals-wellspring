@@ -1,0 +1,122 @@
+{
+  "gold": {
+    "baseline": 1.5,
+    "strategyImpact": 2,
+    "actorLeverage": 3,
+    "methodWeight": 2,
+    "vol": 1,
+    "basis": "Central-bank accumulation and ETF inflows dominate; supportive but rate-sensitive."
+  },
+  "silver": {
+    "baseline": 1.2,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "Rides gold's monetary bid plus industrial (solar) demand; more volatile than gold."
+  },
+  "platinum": {
+    "baseline": 0.3,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "Producer discipline supportive; demand caught between diesel decline and hydrogen growth."
+  },
+  "palladium": {
+    "baseline": -1,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 3,
+    "basis": "Structurally pressured by EV substitution away from gasoline autocatalysts."
+  },
+  "rhodium": {
+    "baseline": -0.4,
+    "strategyImpact": 2,
+    "actorLeverage": 3,
+    "methodWeight": 1,
+    "vol": 3,
+    "basis": "Thin market, extreme volatility; tied almost entirely to autocatalyst demand."
+  },
+  "lithium": {
+    "baseline": 0.6,
+    "strategyImpact": 3,
+    "actorLeverage": 2,
+    "methodWeight": 3,
+    "vol": 3,
+    "basis": "Price corrected hard; production discipline and permitting cuts now tightening the surplus."
+  },
+  "cobalt": {
+    "baseline": 0.2,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "Oversupplied near-term; DRC concentration and offtake activity are the swing factors."
+  },
+  "nickel": {
+    "baseline": -0.5,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "Indonesian supply surge weighs on price; trade-policy responses are the key variable."
+  },
+  "copper": {
+    "baseline": 1.3,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "Energy-transition demand vs. constrained new supply; broad, liquid, bellwether market."
+  },
+  "graphite": {
+    "baseline": 0.4,
+    "strategyImpact": 3,
+    "actorLeverage": 3,
+    "methodWeight": 3,
+    "vol": 2,
+    "basis": "Chinese export licensing is the dominant swing factor; demand growth is structural."
+  },
+  "neodymium": {
+    "baseline": 0.7,
+    "strategyImpact": 3,
+    "actorLeverage": 3,
+    "methodWeight": 3,
+    "vol": 2,
+    "basis": "Magnet demand structural; Chinese policy and Western stockpiling pull in opposite directions."
+  },
+  "dysprosium": {
+    "baseline": 0.9,
+    "strategyImpact": 3,
+    "actorLeverage": 3,
+    "methodWeight": 3,
+    "vol": 3,
+    "basis": "Heavy-REE supply even tighter than light REEs; highly exposed to export-control policy."
+  },
+  "gallium": {
+    "baseline": 1.1,
+    "strategyImpact": 3,
+    "actorLeverage": 3,
+    "methodWeight": 3,
+    "vol": 3,
+    "basis": "A near-pure China policy instrument; price carries a large permission-risk premium."
+  },
+  "germanium": {
+    "baseline": 1,
+    "strategyImpact": 3,
+    "actorLeverage": 3,
+    "methodWeight": 3,
+    "vol": 3,
+    "basis": "Same structure as gallium; byproduct supply plus export-licensing leverage."
+  },
+  "tin": {
+    "baseline": 0.5,
+    "strategyImpact": 2,
+    "actorLeverage": 2,
+    "methodWeight": 2,
+    "vol": 2,
+    "basis": "A quiet direct bet on electronics demand; supply is geographically scattered."
+  }
+}

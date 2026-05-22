@@ -1,0 +1,1159 @@
+{
+  "metals": {
+    "silver": {
+      "name": "Silver",
+      "symbol": "Ag",
+      "group": "precious",
+      "price": 31.5,
+      "priceUnit": "USD/oz",
+      "priceYoY": 21,
+      "demandYoY": 2.5,
+      "note": "Hybrid metal: ~55% industrial demand, led by solar PV. Highest electrical conductivity of any element."
+    },
+    "platinum": {
+      "name": "Platinum",
+      "symbol": "Pt",
+      "group": "precious",
+      "price": 985,
+      "priceUnit": "USD/oz",
+      "priceYoY": 2,
+      "demandYoY": -1,
+      "note": "Autocatalysts (diesel), plus growing hydrogen fuel-cell / electrolyzer demand."
+    },
+    "palladium": {
+      "name": "Palladium",
+      "symbol": "Pd",
+      "group": "precious",
+      "price": 1010,
+      "priceUnit": "USD/oz",
+      "priceYoY": -22,
+      "demandYoY": -4,
+      "note": "Near-pure bet on gasoline autocatalysts; structurally pressured by EV adoption."
+    },
+    "lithium": {
+      "name": "Lithium",
+      "symbol": "Li",
+      "group": "battery",
+      "price": 11,
+      "priceUnit": "USD/kg (LCE)",
+      "priceYoY": -18,
+      "demandYoY": 15,
+      "note": "Core battery cathode input. Price corrected hard after the 2022 spike; demand still rising fast."
+    },
+    "cobalt": {
+      "name": "Cobalt",
+      "symbol": "Co",
+      "group": "battery",
+      "price": 24,
+      "priceUnit": "USD/kg",
+      "priceYoY": -9,
+      "demandYoY": 6,
+      "note": "Battery cathode stabilizer. Extreme mining concentration in the DRC; refining concentration in China."
+    },
+    "nickel": {
+      "name": "Nickel",
+      "symbol": "Ni",
+      "group": "battery",
+      "price": 16500,
+      "priceUnit": "USD/tonne",
+      "priceYoY": -12,
+      "demandYoY": 5,
+      "note": "Dual market: stainless steel staple + high-nickel battery cathodes. Indonesian supply surge reshaped the market."
+    },
+    "neodymium": {
+      "name": "Neodymium",
+      "symbol": "Nd",
+      "group": "rareearth",
+      "price": 75,
+      "priceUnit": "USD/kg",
+      "priceYoY": -14,
+      "demandYoY": 8,
+      "note": "Permanent-magnet rare earth for EV motors and wind turbines. Mining and especially processing China-dominated."
+    },
+    "gallium": {
+      "name": "Gallium",
+      "symbol": "Ga",
+      "group": "minor",
+      "price": 410,
+      "priceUnit": "USD/kg",
+      "priceYoY": 35,
+      "demandYoY": 7,
+      "note": "Minor tech metal: GaN/GaAs semiconductors, LEDs, radar. Mostly a byproduct of aluminum (bauxite) refining."
+    },
+    "gold": {
+      "name": "Gold",
+      "symbol": "Au",
+      "group": "precious",
+      "price": 2950,
+      "priceUnit": "USD/oz",
+      "priceYoY": 28,
+      "demandYoY": 1,
+      "note": "Primarily monetary, not industrial (~7% industrial use). Included as a contrast anchor — it trades on rates, the dollar, and risk, not the factory cycle."
+    },
+    "rhodium": {
+      "name": "Rhodium",
+      "symbol": "Rh",
+      "group": "precious",
+      "price": 4600,
+      "priceUnit": "USD/oz",
+      "priceYoY": -2,
+      "demandYoY": -3,
+      "note": "Tiny, extreme market — almost entirely autocatalyst emissions control. Historically the most volatile of all metal prices."
+    },
+    "copper": {
+      "name": "Copper",
+      "symbol": "Cu",
+      "group": "battery",
+      "price": 9400,
+      "priceUnit": "USD/tonne",
+      "priceYoY": 9,
+      "demandYoY": 3,
+      "note": "The industrial workhorse conductor — grids, wiring, EVs, electronics. Often treated as the bellwether of the energy transition."
+    },
+    "graphite": {
+      "name": "Graphite",
+      "symbol": "C",
+      "group": "battery",
+      "price": 0.95,
+      "priceUnit": "USD/kg (flake)",
+      "priceYoY": -16,
+      "demandYoY": 12,
+      "note": "Dominant battery anode material. Natural and synthetic supply both heavily China-concentrated; subject to 2023-24 export licensing."
+    },
+    "dysprosium": {
+      "name": "Dysprosium",
+      "symbol": "Dy",
+      "group": "rareearth",
+      "price": 290,
+      "priceUnit": "USD/kg",
+      "priceYoY": -10,
+      "demandYoY": 6,
+      "note": "Heavy rare earth added to magnets to hold performance at high temperature. Heavy-REE supply even more China/Myanmar-concentrated than light REEs."
+    },
+    "germanium": {
+      "name": "Germanium",
+      "symbol": "Ge",
+      "group": "minor",
+      "price": 1800,
+      "priceUnit": "USD/kg",
+      "priceYoY": 42,
+      "demandYoY": 4,
+      "note": "Fiber optics, infrared optics, satellite solar cells. Byproduct of zinc refining; hit by Chinese export controls alongside gallium."
+    },
+    "tin": {
+      "name": "Tin",
+      "symbol": "Sn",
+      "group": "minor",
+      "price": 31000,
+      "priceUnit": "USD/tonne",
+      "priceYoY": 14,
+      "demandYoY": 2,
+      "note": "Over half of demand is solder for electronics — making tin a quiet but direct bet on semiconductor and device assembly."
+    }
+  },
+  "groups": {
+    "precious": {
+      "label": "Precious",
+      "color": "#d4a843"
+    },
+    "battery": {
+      "label": "Battery / Energy",
+      "color": "#5b9bd5"
+    },
+    "rareearth": {
+      "label": "Rare Earth",
+      "color": "#9b6bc4"
+    },
+    "minor": {
+      "label": "Minor / Tech",
+      "color": "#56b88a"
+    }
+  },
+  "data": {
+    "silver": {
+      "extraction": {
+        "Mexico": 24,
+        "China": 14,
+        "Peru": 13,
+        "Chile": 6,
+        "Poland": 6,
+        "Russia": 5,
+        "Australia": 5,
+        "USA": 3
+      },
+      "processing": {
+        "China": 38,
+        "Poland": 10,
+        "SouthKorea": 9,
+        "Japan": 8,
+        "Mexico": 6,
+        "Russia": 5,
+        "Canada": 4
+      },
+      "application": {
+        "China": 30,
+        "USA": 14,
+        "Japan": 11,
+        "Germany": 7,
+        "SouthKorea": 6,
+        "Mexico": 4
+      },
+      "owners": {
+        "Mexico": {
+          "extraction": [
+            "Fresnillo plc",
+            "Industrias Peñoles",
+            "Grupo México"
+          ]
+        },
+        "China": {
+          "extraction": [
+            "Zijin Mining",
+            "Shandong Gold"
+          ],
+          "processing": [
+            "Hunan-based smelters",
+            "Zijin Mining"
+          ],
+          "application": [
+            "LONGi (solar)",
+            "JinkoSolar",
+            "Trina Solar"
+          ]
+        },
+        "Peru": {
+          "extraction": [
+            "Buenaventura",
+            "Hochschild Mining"
+          ]
+        },
+        "Poland": {
+          "extraction": [
+            "KGHM Polska Miedź"
+          ],
+          "processing": [
+            "KGHM Polska Miedź"
+          ]
+        },
+        "USA": {
+          "application": [
+            "First Solar",
+            "Major electronics OEMs"
+          ]
+        },
+        "Japan": {
+          "processing": [
+            "Mitsubishi Materials",
+            "Dowa Holdings"
+          ],
+          "application": [
+            "Panasonic",
+            "Murata"
+          ]
+        }
+      }
+    },
+    "platinum": {
+      "extraction": {
+        "SouthAfrica": 72,
+        "Russia": 11,
+        "Zimbabwe": 8,
+        "Canada": 3,
+        "USA": 2
+      },
+      "processing": {
+        "SouthAfrica": 60,
+        "Russia": 14,
+        "Germany": 8,
+        "USA": 6,
+        "Japan": 5
+      },
+      "application": {
+        "China": 30,
+        "Germany": 15,
+        "Japan": 12,
+        "USA": 11,
+        "SouthKorea": 5
+      },
+      "owners": {
+        "SouthAfrica": {
+          "extraction": [
+            "Anglo American Platinum",
+            "Impala Platinum",
+            "Sibanye-Stillwater"
+          ],
+          "processing": [
+            "Anglo American Platinum",
+            "Impala Platinum"
+          ]
+        },
+        "Russia": {
+          "extraction": [
+            "Nornickel"
+          ],
+          "processing": [
+            "Nornickel"
+          ]
+        },
+        "Germany": {
+          "processing": [
+            "Heraeus",
+            "BASF (catalysts)"
+          ],
+          "application": [
+            "BASF",
+            "Umicore (Germany ops)"
+          ]
+        },
+        "China": {
+          "application": [
+            "SAIC / autocatalyst suppliers",
+            "Jewelry sector"
+          ]
+        },
+        "Japan": {
+          "processing": [
+            "Tanaka Precious Metals"
+          ],
+          "application": [
+            "Toyota (fuel cells)"
+          ]
+        }
+      }
+    },
+    "palladium": {
+      "extraction": {
+        "Russia": 40,
+        "SouthAfrica": 38,
+        "Canada": 9,
+        "USA": 6,
+        "Zimbabwe": 5
+      },
+      "processing": {
+        "Russia": 42,
+        "SouthAfrica": 34,
+        "USA": 8,
+        "Germany": 6,
+        "Japan": 5
+      },
+      "application": {
+        "China": 28,
+        "USA": 18,
+        "Germany": 13,
+        "Japan": 10,
+        "SouthKorea": 6
+      },
+      "owners": {
+        "Russia": {
+          "extraction": [
+            "Nornickel"
+          ],
+          "processing": [
+            "Nornickel"
+          ]
+        },
+        "SouthAfrica": {
+          "extraction": [
+            "Sibanye-Stillwater",
+            "Impala Platinum",
+            "Anglo American Platinum"
+          ],
+          "processing": [
+            "Impala Platinum"
+          ]
+        },
+        "USA": {
+          "extraction": [
+            "Sibanye-Stillwater (Stillwater mine)"
+          ],
+          "application": [
+            "Major autocatalyst manufacturers"
+          ]
+        },
+        "Germany": {
+          "application": [
+            "BASF",
+            "Umicore"
+          ]
+        },
+        "China": {
+          "application": [
+            "Domestic autocatalyst suppliers"
+          ]
+        }
+      }
+    },
+    "lithium": {
+      "extraction": {
+        "Australia": 48,
+        "Chile": 24,
+        "China": 18,
+        "Argentina": 5,
+        "USA": 2
+      },
+      "processing": {
+        "China": 65,
+        "Chile": 13,
+        "Argentina": 6,
+        "USA": 4,
+        "Australia": 3
+      },
+      "application": {
+        "China": 62,
+        "SouthKorea": 12,
+        "Japan": 8,
+        "USA": 7,
+        "Germany": 4
+      },
+      "owners": {
+        "Australia": {
+          "extraction": [
+            "Pilbara Minerals",
+            "Mineral Resources",
+            "IGO/Albemarle JV"
+          ]
+        },
+        "Chile": {
+          "extraction": [
+            "SQM",
+            "Albemarle"
+          ],
+          "processing": [
+            "SQM",
+            "Albemarle"
+          ]
+        },
+        "China": {
+          "extraction": [
+            "Ganfeng Lithium",
+            "Tianqi Lithium"
+          ],
+          "processing": [
+            "Ganfeng Lithium",
+            "Tianqi Lithium"
+          ],
+          "application": [
+            "CATL",
+            "BYD",
+            "CALB"
+          ]
+        },
+        "SouthKorea": {
+          "application": [
+            "LG Energy Solution",
+            "Samsung SDI",
+            "SK On"
+          ]
+        },
+        "Argentina": {
+          "extraction": [
+            "Lithium Americas",
+            "Livent (now Arcadium)"
+          ]
+        }
+      }
+    },
+    "cobalt": {
+      "extraction": {
+        "DRC": 74,
+        "Indonesia": 9,
+        "Russia": 4,
+        "Australia": 3,
+        "Philippines": 3,
+        "Canada": 2
+      },
+      "processing": {
+        "China": 74,
+        "Finland": 9,
+        "Indonesia": 6,
+        "Canada": 3,
+        "Japan": 2
+      },
+      "application": {
+        "China": 58,
+        "SouthKorea": 13,
+        "Japan": 10,
+        "USA": 6,
+        "Germany": 4
+      },
+      "owners": {
+        "DRC": {
+          "extraction": [
+            "CMOC Group",
+            "Glencore",
+            "ERG (Eurasian Resources)"
+          ]
+        },
+        "China": {
+          "processing": [
+            "Huayou Cobalt",
+            "CMOC Group",
+            "GEM Co."
+          ],
+          "application": [
+            "CATL",
+            "BYD"
+          ]
+        },
+        "Finland": {
+          "processing": [
+            "Umicore (Kokkola refinery)"
+          ]
+        },
+        "Indonesia": {
+          "extraction": [
+            "HPAL nickel-cobalt projects"
+          ],
+          "processing": [
+            "HPAL operators"
+          ]
+        },
+        "SouthKorea": {
+          "application": [
+            "LG Energy Solution",
+            "Samsung SDI"
+          ]
+        }
+      }
+    },
+    "nickel": {
+      "extraction": {
+        "Indonesia": 52,
+        "Philippines": 11,
+        "Russia": 7,
+        "Australia": 5,
+        "Canada": 5,
+        "China": 4
+      },
+      "processing": {
+        "China": 42,
+        "Indonesia": 30,
+        "Japan": 6,
+        "Russia": 6,
+        "Finland": 3
+      },
+      "application": {
+        "China": 56,
+        "Indonesia": 10,
+        "Japan": 8,
+        "SouthKorea": 7,
+        "USA": 5,
+        "Germany": 4
+      },
+      "owners": {
+        "Indonesia": {
+          "extraction": [
+            "Tsingshan-linked operations",
+            "Vale Indonesia",
+            "Harita Group"
+          ],
+          "processing": [
+            "Tsingshan Holding Group",
+            "Huayou-linked HPAL"
+          ]
+        },
+        "Philippines": {
+          "extraction": [
+            "Nickel Asia Corporation"
+          ]
+        },
+        "Russia": {
+          "extraction": [
+            "Nornickel"
+          ],
+          "processing": [
+            "Nornickel"
+          ]
+        },
+        "China": {
+          "processing": [
+            "Tsingshan Holding Group",
+            "Jinchuan Group"
+          ],
+          "application": [
+            "CATL",
+            "stainless steel mills"
+          ]
+        },
+        "Canada": {
+          "extraction": [
+            "Vale",
+            "Glencore"
+          ]
+        }
+      }
+    },
+    "neodymium": {
+      "extraction": {
+        "China": 69,
+        "USA": 12,
+        "Myanmar": 11,
+        "Australia": 5,
+        "Russia": 1
+      },
+      "processing": {
+        "China": 88,
+        "Malaysia": 5,
+        "USA": 3,
+        "Estonia": 2
+      },
+      "application": {
+        "China": 75,
+        "Japan": 12,
+        "Germany": 5,
+        "USA": 4,
+        "SouthKorea": 2
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "China Northern Rare Earth Group",
+            "China Rare Earth Group"
+          ],
+          "processing": [
+            "China Northern Rare Earth Group",
+            "China Rare Earth Group"
+          ],
+          "application": [
+            "Domestic magnet makers (e.g. JL MAG)"
+          ]
+        },
+        "USA": {
+          "extraction": [
+            "MP Materials (Mountain Pass)"
+          ],
+          "processing": [
+            "MP Materials (ramping)"
+          ]
+        },
+        "Myanmar": {
+          "extraction": [
+            "Informal / cross-border feedstock to China"
+          ]
+        },
+        "Japan": {
+          "application": [
+            "Shin-Etsu Chemical",
+            "TDK",
+            "Proterial (ex-Hitachi Metals)"
+          ]
+        },
+        "Australia": {
+          "extraction": [
+            "Lynas Rare Earths"
+          ]
+        }
+      }
+    },
+    "gallium": {
+      "extraction": {
+        "China": 98,
+        "Russia": 1,
+        "Japan": 1
+      },
+      "processing": {
+        "China": 90,
+        "Japan": 4,
+        "USA": 3,
+        "Germany": 2
+      },
+      "application": {
+        "China": 40,
+        "Japan": 18,
+        "USA": 16,
+        "SouthKorea": 10,
+        "Germany": 8
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "Aluminum-refinery byproduct producers (e.g. Chinalco-linked)"
+          ],
+          "processing": [
+            "Chinese primary gallium refiners"
+          ],
+          "application": [
+            "Domestic GaN/GaAs chip and LED makers"
+          ]
+        },
+        "Japan": {
+          "processing": [
+            "Dowa Holdings"
+          ],
+          "application": [
+            "Sumitomo Electric",
+            "GaN device makers"
+          ]
+        },
+        "USA": {
+          "application": [
+            "RF/GaN semiconductor firms",
+            "LED manufacturers"
+          ]
+        },
+        "Germany": {
+          "processing": [
+            "Recycling-based recovery"
+          ],
+          "application": [
+            "Semiconductor and optoelectronics firms"
+          ]
+        }
+      }
+    },
+    "gold": {
+      "extraction": {
+        "China": 10,
+        "Russia": 10,
+        "Australia": 9,
+        "Canada": 7,
+        "USA": 6,
+        "Peru": 4,
+        "Indonesia": 4,
+        "SouthAfrica": 3
+      },
+      "processing": {
+        "China": 18,
+        "Russia": 9,
+        "Australia": 7,
+        "USA": 7,
+        "SouthAfrica": 5,
+        "Canada": 4
+      },
+      "application": {
+        "China": 28,
+        "USA": 14,
+        "Germany": 6,
+        "Japan": 5,
+        "SouthKorea": 4
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "Zijin Mining",
+            "Shandong Gold",
+            "China National Gold"
+          ],
+          "processing": [
+            "Domestic refiners"
+          ],
+          "application": [
+            "Electronics OEMs",
+            "Jewelry sector"
+          ]
+        },
+        "Russia": {
+          "extraction": [
+            "Polyus",
+            "Polymetal"
+          ],
+          "processing": [
+            "Domestic refiners"
+          ]
+        },
+        "Australia": {
+          "extraction": [
+            "Newmont (Australia ops)",
+            "Northern Star Resources"
+          ]
+        },
+        "USA": {
+          "extraction": [
+            "Newmont",
+            "Barrick (Nevada JV)"
+          ],
+          "application": [
+            "Semiconductor and connector makers"
+          ]
+        },
+        "Canada": {
+          "extraction": [
+            "Agnico Eagle",
+            "Barrick Gold"
+          ]
+        }
+      }
+    },
+    "rhodium": {
+      "extraction": {
+        "SouthAfrica": 80,
+        "Russia": 10,
+        "Zimbabwe": 6,
+        "Canada": 2,
+        "USA": 2
+      },
+      "processing": {
+        "SouthAfrica": 70,
+        "Russia": 12,
+        "Germany": 7,
+        "USA": 5,
+        "Japan": 4
+      },
+      "application": {
+        "China": 32,
+        "Germany": 16,
+        "Japan": 13,
+        "USA": 11,
+        "SouthKorea": 5
+      },
+      "owners": {
+        "SouthAfrica": {
+          "extraction": [
+            "Anglo American Platinum",
+            "Impala Platinum",
+            "Sibanye-Stillwater"
+          ],
+          "processing": [
+            "Anglo American Platinum",
+            "Impala Platinum"
+          ]
+        },
+        "Russia": {
+          "extraction": [
+            "Nornickel"
+          ],
+          "processing": [
+            "Nornickel"
+          ]
+        },
+        "Germany": {
+          "processing": [
+            "Heraeus",
+            "BASF"
+          ],
+          "application": [
+            "BASF",
+            "Umicore"
+          ]
+        },
+        "China": {
+          "application": [
+            "Autocatalyst manufacturers"
+          ]
+        },
+        "Japan": {
+          "processing": [
+            "Tanaka Precious Metals"
+          ],
+          "application": [
+            "Autocatalyst suppliers"
+          ]
+        }
+      }
+    },
+    "copper": {
+      "extraction": {
+        "Chile": 24,
+        "Peru": 10,
+        "DRC": 13,
+        "China": 8,
+        "USA": 6,
+        "Russia": 4,
+        "Australia": 4,
+        "Indonesia": 3
+      },
+      "processing": {
+        "China": 45,
+        "Chile": 8,
+        "Japan": 6,
+        "DRC": 5,
+        "USA": 4,
+        "Russia": 4
+      },
+      "application": {
+        "China": 54,
+        "USA": 8,
+        "Germany": 5,
+        "Japan": 5,
+        "SouthKorea": 4
+      },
+      "owners": {
+        "Chile": {
+          "extraction": [
+            "Codelco",
+            "BHP (Escondida)",
+            "Antofagasta"
+          ],
+          "processing": [
+            "Codelco"
+          ]
+        },
+        "Peru": {
+          "extraction": [
+            "Southern Copper",
+            "MMG (Las Bambas)",
+            "Freeport (Cerro Verde)"
+          ]
+        },
+        "DRC": {
+          "extraction": [
+            "Glencore",
+            "CMOC Group",
+            "Ivanhoe Mines"
+          ]
+        },
+        "China": {
+          "processing": [
+            "Jiangxi Copper",
+            "Tongling Nonferrous",
+            "China Copper"
+          ],
+          "application": [
+            "Grid operators",
+            "Electronics and EV manufacturers"
+          ]
+        },
+        "USA": {
+          "extraction": [
+            "Freeport-McMoRan"
+          ]
+        }
+      }
+    },
+    "graphite": {
+      "extraction": {
+        "China": 65,
+        "Madagascar": 8,
+        "Mozambique": 8,
+        "Brazil": 7,
+        "SouthKorea": 1
+      },
+      "processing": {
+        "China": 91,
+        "Japan": 3,
+        "SouthKorea": 2,
+        "USA": 1
+      },
+      "application": {
+        "China": 68,
+        "SouthKorea": 11,
+        "Japan": 9,
+        "USA": 5,
+        "Germany": 3
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "Domestic flake-graphite miners",
+            "BTR New Material (synthetic)"
+          ],
+          "processing": [
+            "BTR New Material",
+            "Shanshan Technology"
+          ],
+          "application": [
+            "CATL",
+            "BYD"
+          ]
+        },
+        "Mozambique": {
+          "extraction": [
+            "Syrah Resources (Balama mine)"
+          ]
+        },
+        "Madagascar": {
+          "extraction": [
+            "NextSource Materials",
+            "Tirupati-linked operations"
+          ]
+        },
+        "SouthKorea": {
+          "application": [
+            "LG Energy Solution",
+            "Samsung SDI",
+            "POSCO Future M"
+          ]
+        },
+        "Brazil": {
+          "extraction": [
+            "Nacional de Grafite"
+          ]
+        }
+      }
+    },
+    "dysprosium": {
+      "extraction": {
+        "China": 62,
+        "Myanmar": 25,
+        "Australia": 6,
+        "USA": 4,
+        "Russia": 1
+      },
+      "processing": {
+        "China": 90,
+        "Malaysia": 5,
+        "USA": 2,
+        "Estonia": 1
+      },
+      "application": {
+        "China": 74,
+        "Japan": 13,
+        "Germany": 5,
+        "USA": 4,
+        "SouthKorea": 2
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "China Rare Earth Group",
+            "Southern ionic-clay operations"
+          ],
+          "processing": [
+            "China Rare Earth Group",
+            "China Northern Rare Earth Group"
+          ],
+          "application": [
+            "Domestic magnet makers"
+          ]
+        },
+        "Myanmar": {
+          "extraction": [
+            "Informal heavy-REE feedstock to China"
+          ]
+        },
+        "Australia": {
+          "extraction": [
+            "Lynas Rare Earths",
+            "Northern Minerals"
+          ]
+        },
+        "Japan": {
+          "application": [
+            "Shin-Etsu Chemical",
+            "Proterial",
+            "TDK"
+          ]
+        },
+        "Malaysia": {
+          "processing": [
+            "Lynas Malaysia processing plant"
+          ]
+        }
+      }
+    },
+    "germanium": {
+      "extraction": {
+        "China": 68,
+        "Russia": 5,
+        "USA": 3,
+        "Belgium": 3,
+        "Canada": 3
+      },
+      "processing": {
+        "China": 72,
+        "Belgium": 11,
+        "Russia": 5,
+        "USA": 4,
+        "Canada": 3
+      },
+      "application": {
+        "China": 35,
+        "USA": 20,
+        "Japan": 14,
+        "Germany": 9,
+        "SouthKorea": 6
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "Zinc-refinery byproduct producers",
+            "Yunnan Lincang Xinyuan"
+          ],
+          "processing": [
+            "Domestic germanium refiners"
+          ],
+          "application": [
+            "Fiber-optic and IR-optics makers"
+          ]
+        },
+        "Belgium": {
+          "extraction": [
+            "Umicore (byproduct streams)"
+          ],
+          "processing": [
+            "Umicore"
+          ]
+        },
+        "USA": {
+          "processing": [
+            "Specialty recovery operations"
+          ],
+          "application": [
+            "Fiber optics",
+            "Satellite solar-cell makers"
+          ]
+        },
+        "Japan": {
+          "application": [
+            "Optical-fiber and infrared-optics firms"
+          ]
+        }
+      }
+    },
+    "tin": {
+      "extraction": {
+        "China": 23,
+        "Indonesia": 21,
+        "Myanmar": 14,
+        "Peru": 8,
+        "Bolivia": 7,
+        "DRC": 6,
+        "Brazil": 5
+      },
+      "processing": {
+        "China": 48,
+        "Indonesia": 22,
+        "Malaysia": 7,
+        "Bolivia": 5,
+        "Brazil": 4
+      },
+      "application": {
+        "China": 46,
+        "USA": 9,
+        "Japan": 8,
+        "SouthKorea": 6,
+        "Germany": 5
+      },
+      "owners": {
+        "China": {
+          "extraction": [
+            "Yunnan Tin Company"
+          ],
+          "processing": [
+            "Yunnan Tin Company",
+            "Yunnan Chengfeng"
+          ],
+          "application": [
+            "Electronics assembly / solder makers"
+          ]
+        },
+        "Indonesia": {
+          "extraction": [
+            "PT Timah"
+          ],
+          "processing": [
+            "PT Timah"
+          ]
+        },
+        "Myanmar": {
+          "extraction": [
+            "Wa State concessions feeding China"
+          ]
+        },
+        "Malaysia": {
+          "processing": [
+            "Malaysia Smelting Corporation"
+          ]
+        },
+        "Bolivia": {
+          "extraction": [
+            "Comibol-linked operations"
+          ],
+          "processing": [
+            "Vinto smelter"
+          ]
+        }
+      }
+    }
+  }
+}

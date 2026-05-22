@@ -1,0 +1,480 @@
+{
+  "baskets": {
+    "b_precious": {
+      "name": "Precious basket",
+      "group": "precious",
+      "metals": [
+        "gold",
+        "silver",
+        "platinum",
+        "palladium",
+        "rhodium"
+      ]
+    },
+    "b_battery": {
+      "name": "Battery / Energy basket",
+      "group": "battery",
+      "metals": [
+        "lithium",
+        "cobalt",
+        "nickel",
+        "copper",
+        "graphite"
+      ]
+    },
+    "b_rareearth": {
+      "name": "Rare Earth basket",
+      "group": "rareearth",
+      "metals": [
+        "neodymium",
+        "dysprosium"
+      ]
+    },
+    "b_minor": {
+      "name": "Minor / Tech basket",
+      "group": "minor",
+      "metals": [
+        "gallium",
+        "germanium",
+        "tin"
+      ]
+    }
+  },
+  "instruments": {
+    "gold": [
+      {
+        "ticker": "GLD",
+        "name": "SPDR Gold Shares",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 272.4,
+        "chg": 0.6,
+        "exposure": "Physically backed gold bullion."
+      },
+      {
+        "ticker": "IAU",
+        "name": "iShares Gold Trust",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 55.8,
+        "chg": 0.6,
+        "exposure": "Physically backed gold, lower expense ratio."
+      },
+      {
+        "ticker": "GDX",
+        "name": "VanEck Gold Miners ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 48.2,
+        "chg": 1.4,
+        "exposure": "Basket of large gold-mining equities."
+      },
+      {
+        "ticker": "NEM",
+        "name": "Newmont Corporation",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 58.1,
+        "chg": 1.1,
+        "exposure": "World's largest gold producer."
+      },
+      {
+        "ticker": "GOLD",
+        "name": "Barrick Mining",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 21.3,
+        "chg": 0.9,
+        "exposure": "Major gold & copper producer."
+      },
+      {
+        "ticker": "AEM",
+        "name": "Agnico Eagle Mines",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 118.6,
+        "chg": 1,
+        "exposure": "Large North American gold miner."
+      }
+    ],
+    "silver": [
+      {
+        "ticker": "SLV",
+        "name": "iShares Silver Trust",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 30.9,
+        "chg": 1.2,
+        "exposure": "Physically backed silver bullion."
+      },
+      {
+        "ticker": "SIL",
+        "name": "Global X Silver Miners ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 42.7,
+        "chg": 2.1,
+        "exposure": "Basket of silver-mining equities."
+      },
+      {
+        "ticker": "WPM",
+        "name": "Wheaton Precious Metals",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 72.4,
+        "chg": 1.6,
+        "exposure": "Precious-metals streaming company."
+      },
+      {
+        "ticker": "PAAS",
+        "name": "Pan American Silver",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 27.8,
+        "chg": 1.9,
+        "exposure": "Major primary silver producer."
+      },
+      {
+        "ticker": "FNV",
+        "name": "Franco-Nevada",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 148.2,
+        "chg": 0.8,
+        "exposure": "Royalty & streaming, gold/silver weighted."
+      }
+    ],
+    "platinum": [
+      {
+        "ticker": "PPLT",
+        "name": "abrdn Physical Platinum Shares",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 96.3,
+        "chg": 0.4,
+        "exposure": "Physically backed platinum."
+      },
+      {
+        "ticker": "SBSW",
+        "name": "Sibanye-Stillwater (ADR)",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 5.1,
+        "chg": 1.5,
+        "exposure": "Major PGM producer, SA & US ops."
+      },
+      {
+        "ticker": "AAL.L",
+        "name": "Anglo American (London)",
+        "type": "producer",
+        "listing": "LSE",
+        "price": 24.1,
+        "chg": 0.7,
+        "exposure": "Parent of Anglo American Platinum."
+      }
+    ],
+    "palladium": [
+      {
+        "ticker": "PALL",
+        "name": "abrdn Physical Palladium Shares",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 98.7,
+        "chg": -1.1,
+        "exposure": "Physically backed palladium."
+      },
+      {
+        "ticker": "SBSW",
+        "name": "Sibanye-Stillwater (ADR)",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 5.1,
+        "chg": 1.5,
+        "exposure": "PGM producer; palladium-exposed."
+      }
+    ],
+    "rhodium": [
+      {
+        "ticker": "—",
+        "name": "No direct US-listed rhodium instrument",
+        "type": "note",
+        "listing": "—",
+        "price": null,
+        "chg": null,
+        "exposure": "Rhodium has no major US ETF; exposure is indirect via diversified PGM producers (e.g. SBSW, AAL.L)."
+      }
+    ],
+    "lithium": [
+      {
+        "ticker": "LIT",
+        "name": "Global X Lithium & Battery Tech ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 42.1,
+        "chg": -0.9,
+        "exposure": "Lithium miners + battery makers."
+      },
+      {
+        "ticker": "ALB",
+        "name": "Albemarle Corporation",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 78.4,
+        "chg": -1.4,
+        "exposure": "World's largest lithium producer."
+      },
+      {
+        "ticker": "SQM",
+        "name": "Sociedad Química y Minera (ADR)",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 39.2,
+        "chg": -1,
+        "exposure": "Major Chile-based lithium producer."
+      },
+      {
+        "ticker": "LAC",
+        "name": "Lithium Americas",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 3.6,
+        "chg": -2.2,
+        "exposure": "US (Thacker Pass) lithium developer."
+      }
+    ],
+    "cobalt": [
+      {
+        "ticker": "BATT",
+        "name": "Amplify Lithium & Battery Tech ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 9.8,
+        "chg": -0.7,
+        "exposure": "Battery-metals miners incl. cobalt names."
+      },
+      {
+        "ticker": "GLNCY",
+        "name": "Glencore (ADR)",
+        "type": "producer",
+        "listing": "OTC",
+        "price": 9.4,
+        "chg": -0.5,
+        "exposure": "Major cobalt miner & trader (DRC)."
+      },
+      {
+        "ticker": "—",
+        "name": "Note: most cobalt supply is private/Chinese",
+        "type": "note",
+        "listing": "—",
+        "price": null,
+        "chg": null,
+        "exposure": "CMOC and Huayou are listed in China/HK; limited direct US retail access."
+      }
+    ],
+    "nickel": [
+      {
+        "ticker": "VALE",
+        "name": "Vale S.A. (ADR)",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 9.7,
+        "chg": -0.8,
+        "exposure": "Major nickel producer (and iron ore)."
+      },
+      {
+        "ticker": "BHP",
+        "name": "BHP Group (ADR)",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 52.3,
+        "chg": -0.6,
+        "exposure": "Diversified major; nickel & copper."
+      },
+      {
+        "ticker": "GLNCY",
+        "name": "Glencore (ADR)",
+        "type": "producer",
+        "listing": "OTC",
+        "price": 9.4,
+        "chg": -0.5,
+        "exposure": "Nickel mines in Canada, Australia."
+      }
+    ],
+    "copper": [
+      {
+        "ticker": "CPER",
+        "name": "United States Copper Index Fund",
+        "type": "etf-physical",
+        "listing": "NYSE Arca",
+        "price": 28.6,
+        "chg": 0.9,
+        "exposure": "Tracks copper futures."
+      },
+      {
+        "ticker": "COPX",
+        "name": "Global X Copper Miners ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 46.8,
+        "chg": 1.3,
+        "exposure": "Basket of copper-mining equities."
+      },
+      {
+        "ticker": "FCX",
+        "name": "Freeport-McMoRan",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 44.2,
+        "chg": 1.5,
+        "exposure": "One of the largest listed copper miners."
+      },
+      {
+        "ticker": "SCCO",
+        "name": "Southern Copper",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 102.4,
+        "chg": 1.1,
+        "exposure": "Major Americas copper producer."
+      }
+    ],
+    "graphite": [
+      {
+        "ticker": "NMG",
+        "name": "Nouveau Monde Graphite",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 1.4,
+        "chg": -1.8,
+        "exposure": "North American graphite developer."
+      },
+      {
+        "ticker": "SYR.AX",
+        "name": "Syrah Resources (Australia)",
+        "type": "producer",
+        "listing": "ASX",
+        "price": 0.35,
+        "chg": -2,
+        "exposure": "Operates the Balama graphite mine, Mozambique."
+      },
+      {
+        "ticker": "—",
+        "name": "Limited pure-play US graphite access",
+        "type": "note",
+        "listing": "—",
+        "price": null,
+        "chg": null,
+        "exposure": "Most natural-graphite supply is Chinese; pure-play US instruments are scarce."
+      }
+    ],
+    "neodymium": [
+      {
+        "ticker": "MP",
+        "name": "MP Materials",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 18.7,
+        "chg": 2.4,
+        "exposure": "Operates Mountain Pass; main US rare-earth name."
+      },
+      {
+        "ticker": "REMX",
+        "name": "VanEck Rare Earth & Strategic Metals ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 42.3,
+        "chg": 1.7,
+        "exposure": "Basket of rare-earth & strategic-metal miners."
+      },
+      {
+        "ticker": "LYC.AX",
+        "name": "Lynas Rare Earths (Australia)",
+        "type": "producer",
+        "listing": "ASX",
+        "price": 6.8,
+        "chg": 1.9,
+        "exposure": "Largest rare-earth producer outside China."
+      }
+    ],
+    "dysprosium": [
+      {
+        "ticker": "REMX",
+        "name": "VanEck Rare Earth & Strategic Metals ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 42.3,
+        "chg": 1.7,
+        "exposure": "Heavy-REE exposure via the miner basket."
+      },
+      {
+        "ticker": "MP",
+        "name": "MP Materials",
+        "type": "producer",
+        "listing": "NYSE",
+        "price": 18.7,
+        "chg": 2.4,
+        "exposure": "Expanding into heavy-REE separation."
+      },
+      {
+        "ticker": "LYC.AX",
+        "name": "Lynas Rare Earths (Australia)",
+        "type": "producer",
+        "listing": "ASX",
+        "price": 6.8,
+        "chg": 1.9,
+        "exposure": "Heavy-REE processing via Malaysia plant."
+      }
+    ],
+    "gallium": [
+      {
+        "ticker": "REMX",
+        "name": "VanEck Rare Earth & Strategic Metals ETF",
+        "type": "etf-miner",
+        "listing": "NYSE Arca",
+        "price": 42.3,
+        "chg": 1.7,
+        "exposure": "Closest basket exposure; not a pure play."
+      },
+      {
+        "ticker": "—",
+        "name": "No pure-play gallium instrument",
+        "type": "note",
+        "listing": "—",
+        "price": null,
+        "chg": null,
+        "exposure": "Gallium is an aluminum-refining byproduct; ~98% China. No direct US-listed pure play."
+      }
+    ],
+    "germanium": [
+      {
+        "ticker": "—",
+        "name": "No pure-play germanium instrument",
+        "type": "note",
+        "listing": "—",
+        "price": null,
+        "chg": null,
+        "exposure": "Germanium is a zinc-refining byproduct; exposure is indirect via diversified miners/recyclers (e.g. Umicore, listed in Brussels)."
+      }
+    ],
+    "tin": [
+      {
+        "ticker": "AFMJF",
+        "name": "Alphamin Resources",
+        "type": "producer",
+        "listing": "OTC / TSX-V",
+        "price": 0.95,
+        "chg": 1.2,
+        "exposure": "Major non-Chinese tin producer (DRC)."
+      },
+      {
+        "ticker": "MLX.AX",
+        "name": "Metals X (Australia)",
+        "type": "producer",
+        "listing": "ASX",
+        "price": 0.55,
+        "chg": 0.8,
+        "exposure": "Australian tin producer."
+      }
+    ]
+  }
+}
