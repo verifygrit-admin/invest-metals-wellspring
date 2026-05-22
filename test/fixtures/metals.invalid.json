@@ -1,0 +1,7 @@
+{
+  "metals": {
+    "silver": { "name": "Silver", "symbol": "Ag", "grp": "precious", "price": 31.5, "priceUnit": "USD/oz", "priceYoY": 21.0, "demandYoY": 2.5, "note": "broken: group renamed to grp" }
+  },
+  "groups": { "precious": { "label": "Precious", "color": "#d4a843" } },
+  "data": {}
+}
