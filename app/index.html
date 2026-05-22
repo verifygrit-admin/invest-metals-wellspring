@@ -2278,7 +2278,9 @@ function heatColor(share,max){
 }
 
 /* ---------- build sidebar ---------- */
+function buildSidebar(){
 const metalList=document.getElementById('metalList');
+metalList.innerHTML='';
 const groupOrder=['precious','battery','rareearth','minor'];
 groupOrder.forEach(grpKey=>{
   const g=GROUPS[grpKey];
@@ -2298,12 +2300,14 @@ groupOrder.forEach(grpKey=>{
   });
 });
 const groupKey=document.getElementById('groupKey');
+groupKey.innerHTML='';
 Object.values(GROUPS).forEach(g=>{
   const d=document.createElement('div');
   d.style.cssText="display:flex;align-items:center;gap:8px;margin-bottom:6px;font-family:Helvetica Neue,Arial,sans-serif;font-size:11px;color:var(--ink-dim)";
   d.innerHTML=`<span class="dot" style="background:${g.color}"></span>${g.label}`;
   groupKey.appendChild(d);
 });
+}
 
 /* ---------- toggles ---------- */
 document.getElementById('vectorToggle').addEventListener('click',e=>{
