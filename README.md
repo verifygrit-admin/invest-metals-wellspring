@@ -4,7 +4,7 @@
 
 A four-view dashboard tracking 15 industrial and tech-critical metals across geography, market movers, market strategies, and an investor terminal. A Wellspring research product.
 
-🔗 **Live site:** _(GitHub Pages URL — set after Sprint 1)_
+🔗 **Live site:** https://verifygrit-admin.github.io/invest-metals-wellspring/
 
 ---
 
