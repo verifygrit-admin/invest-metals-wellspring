@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["metals", "groups", "data", "countries", "flows"],
+  "additionalProperties": false,
+  "properties": {
+    "metals": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "symbol", "group", "price", "priceUnit", "priceYoY", "demandYoY", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "symbol": { "type": "string" },
+          "group": { "type": "string", "enum": ["precious", "battery", "rareearth", "minor"] },
+          "price": { "type": "number" },
+          "priceUnit": { "type": "string" },
+          "priceYoY": { "type": "number" },
+          "demandYoY": { "type": "number" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "groups": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "color"],
+        "additionalProperties": false,
+        "properties": { "label": { "type": "string" }, "color": { "type": "string" } }
+      }
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["extraction", "processing", "application", "owners"],
+        "additionalProperties": false,
+        "properties": {
+          "extraction":  { "type": "object", "additionalProperties": { "type": "number" } },
+          "processing":  { "type": "object", "additionalProperties": { "type": "number" } },
+          "application": { "type": "object", "additionalProperties": { "type": "number" } },
+          "owners": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "countries": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["lon", "lat", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "lon": { "type": "number" },
+          "lat": { "type": "number" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "flows": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["from", "to", "weight"],
+          "additionalProperties": false,
+          "properties": {
+            "from": { "type": "string" },
+            "to": { "type": "string" },
+            "weight": { "type": "number" }
+          }
+        }
+      }
+    }
+  }
+}

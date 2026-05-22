@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["baskets", "instruments"],
+  "additionalProperties": false,
+  "properties": {
+    "baskets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "group", "metals"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "group": { "type": "string" },
+          "metals": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "instruments": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["ticker", "name", "type", "listing", "price", "chg", "exposure"],
+          "additionalProperties": false,
+          "properties": {
+            "ticker": { "type": "string" },
+            "name": { "type": "string" },
+            "type": { "type": "string", "enum": ["etf-physical", "etf-miner", "producer", "note"] },
+            "listing": { "type": "string" },
+            "price": { "type": ["number", "null"] },
+            "chg": { "type": ["number", "null"] },
+            "exposure": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

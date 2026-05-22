@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["families", "strategies"],
+  "additionalProperties": false,
+  "properties": {
+    "families": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "desc", "color"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "desc": { "type": "string" },
+          "color": { "type": "string" }
+        }
+      }
+    },
+    "strategies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "family", "lever", "depth", "mechanism", "whoUses", "instances", "reading"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "family": { "type": "string", "enum": ["pricing", "permission"] },
+          "lever": { "type": "string" },
+          "depth": { "type": "string", "enum": ["case", "entry"] },
+          "mechanism": { "type": "string" },
+          "whoUses": { "type": "string" },
+          "instances": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["date", "metals", "text"],
+              "additionalProperties": false,
+              "properties": {
+                "date": { "type": "string" },
+                "metals": { "type": "array", "items": { "type": "string" } },
+                "text": { "type": "string" }
+              }
+            }
+          },
+          "reading": { "type": "string" }
+        }
+      }
+    }
+  }
+}

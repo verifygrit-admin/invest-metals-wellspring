@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["actors", "levers", "matrix", "reading"],
+  "additionalProperties": false,
+  "properties": {
+    "actors": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "short", "desc"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "short": { "type": "string" },
+          "desc": { "type": "string" }
+        }
+      }
+    },
+    "levers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "desc", "vectors"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "desc": { "type": "string" },
+          "vectors": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "matrix": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 3 }
+        }
+      }
+    },
+    "reading": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

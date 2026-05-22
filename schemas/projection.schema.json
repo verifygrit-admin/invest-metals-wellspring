@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "required": ["baseline", "strategyImpact", "actorLeverage", "methodWeight", "vol", "basis"],
+    "additionalProperties": false,
+    "properties": {
+      "baseline": { "type": "number" },
+      "strategyImpact": { "type": "integer", "minimum": 0, "maximum": 3 },
+      "actorLeverage": { "type": "integer", "minimum": 0, "maximum": 3 },
+      "methodWeight": { "type": "integer", "minimum": 0, "maximum": 3 },
+      "vol": { "type": "integer", "minimum": 0, "maximum": 3 },
+      "basis": { "type": "string" }
+    }
+  }
+}
