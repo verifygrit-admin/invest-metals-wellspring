@@ -1,142 +1,308 @@
-{
-  "asOf": "2026-05-22T00:00:00Z",
-  "source": "seed",
-  "prices": {
-    "GLD": {
-      "price": 272.4,
-      "change": 0.6
-    },
-    "IAU": {
-      "price": 55.8,
-      "change": 0.6
-    },
-    "GDX": {
-      "price": 48.2,
-      "change": 1.4
-    },
-    "NEM": {
-      "price": 58.1,
-      "change": 1.1
-    },
-    "GOLD": {
-      "price": 21.3,
-      "change": 0.9
-    },
-    "AEM": {
-      "price": 118.6,
-      "change": 1
-    },
-    "SLV": {
-      "price": 30.9,
-      "change": 1.2
-    },
-    "SIL": {
-      "price": 42.7,
-      "change": 2.1
-    },
-    "WPM": {
-      "price": 72.4,
-      "change": 1.6
-    },
-    "PAAS": {
-      "price": 27.8,
-      "change": 1.9
-    },
-    "FNV": {
-      "price": 148.2,
-      "change": 0.8
-    },
-    "PPLT": {
-      "price": 96.3,
-      "change": 0.4
-    },
-    "SBSW": {
-      "price": 5.1,
-      "change": 1.5
-    },
-    "AAL.L": {
-      "price": 24.1,
-      "change": 0.7
-    },
-    "PALL": {
-      "price": 98.7,
-      "change": -1.1
-    },
-    "LIT": {
-      "price": 42.1,
-      "change": -0.9
-    },
-    "ALB": {
-      "price": 78.4,
-      "change": -1.4
-    },
-    "SQM": {
-      "price": 39.2,
-      "change": -1
-    },
-    "LAC": {
-      "price": 3.6,
-      "change": -2.2
-    },
-    "BATT": {
-      "price": 9.8,
-      "change": -0.7
-    },
-    "GLNCY": {
-      "price": 9.4,
-      "change": -0.5
-    },
-    "VALE": {
-      "price": 9.7,
-      "change": -0.8
-    },
-    "BHP": {
-      "price": 52.3,
-      "change": -0.6
-    },
-    "CPER": {
-      "price": 28.6,
-      "change": 0.9
-    },
-    "COPX": {
-      "price": 46.8,
-      "change": 1.3
-    },
-    "FCX": {
-      "price": 44.2,
-      "change": 1.5
-    },
-    "SCCO": {
-      "price": 102.4,
-      "change": 1.1
-    },
-    "NMG": {
-      "price": 1.4,
-      "change": -1.8
-    },
-    "SYR.AX": {
-      "price": 0.35,
-      "change": -2
-    },
-    "MP": {
-      "price": 18.7,
-      "change": 2.4
-    },
-    "REMX": {
-      "price": 42.3,
-      "change": 1.7
-    },
-    "LYC.AX": {
-      "price": 6.8,
-      "change": 1.9
-    },
-    "AFMJF": {
-      "price": 0.95,
-      "change": 1.2
-    },
-    "MLX.AX": {
-      "price": 0.55,
-      "change": 0.8
-    }
+[
+  {
+    "ticker": "GLD",
+    "price": 272.4,
+    "change": 0.6,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "IAU",
+    "price": 55.8,
+    "change": 0.6,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "GDX",
+    "price": 48.2,
+    "change": 1.4,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "NEM",
+    "price": 58.1,
+    "change": 1.1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "GOLD",
+    "price": 21.3,
+    "change": 0.9,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "AEM",
+    "price": 118.6,
+    "change": 1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SLV",
+    "price": 30.9,
+    "change": 1.2,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SIL",
+    "price": 42.7,
+    "change": 2.1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "WPM",
+    "price": 72.4,
+    "change": 1.6,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "PAAS",
+    "price": 27.8,
+    "change": 1.9,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "FNV",
+    "price": 148.2,
+    "change": 0.8,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "PPLT",
+    "price": 96.3,
+    "change": 0.4,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SBSW",
+    "price": 5.1,
+    "change": 1.5,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "AAL.L",
+    "price": 24.1,
+    "change": 0.7,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "PALL",
+    "price": 98.7,
+    "change": -1.1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "LIT",
+    "price": 42.1,
+    "change": -0.9,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "ALB",
+    "price": 78.4,
+    "change": -1.4,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SQM",
+    "price": 39.2,
+    "change": -1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "LAC",
+    "price": 3.6,
+    "change": -2.2,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "BATT",
+    "price": 9.8,
+    "change": -0.7,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "GLNCY",
+    "price": 9.4,
+    "change": -0.5,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "VALE",
+    "price": 9.7,
+    "change": -0.8,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "BHP",
+    "price": 52.3,
+    "change": -0.6,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "CPER",
+    "price": 28.6,
+    "change": 0.9,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "COPX",
+    "price": 46.8,
+    "change": 1.3,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "FCX",
+    "price": 44.2,
+    "change": 1.5,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SCCO",
+    "price": 102.4,
+    "change": 1.1,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "NMG",
+    "price": 1.4,
+    "change": -1.8,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "SYR.AX",
+    "price": 0.35,
+    "change": -2,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "MP",
+    "price": 18.7,
+    "change": 2.4,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "REMX",
+    "price": 42.3,
+    "change": 1.7,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "LYC.AX",
+    "price": 6.8,
+    "change": 1.9,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "AFMJF",
+    "price": 0.95,
+    "change": 1.2,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
+  },
+  {
+    "ticker": "MLX.AX",
+    "price": 0.55,
+    "change": 0.8,
+    "currency": "USD",
+    "asOf": "2026-05-22T00:00:00Z",
+    "source": "seed",
+    "isLive": true
   }
-}
+]

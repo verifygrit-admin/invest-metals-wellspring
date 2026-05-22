@@ -1,257 +1,266 @@
-{
-  "asOf": "2026-05-22T00:00:00Z",
-  "events": [
-    {
-      "id": "n1",
-      "date": "2023-07-03",
-      "metals": [
-        "gallium",
-        "germanium"
-      ],
-      "headline": "China announces export licensing on gallium and germanium",
-      "excerpt": "China's Ministry of Commerce announced that exporters of gallium and germanium products would need licenses from 1 August 2023, citing national security. Wrought-metal exports fell sharply the following month. (Reporting: USITC briefing; Reuters; Fastmarkets.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": 2,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n2",
-      "date": "2023-10-20",
-      "metals": [
-        "graphite"
-      ],
-      "headline": "China extends export licensing to graphite products",
-      "excerpt": "China widened its licensing regime to cover certain graphite items, the dominant battery-anode material — applying the gallium/germanium playbook to a core battery input. (Reporting: Fastmarkets; China-Briefing.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": 1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n3",
-      "date": "2024-08-15",
-      "metals": [
-        "tin"
-      ],
-      "headline": "China restricts antimony exports — a precision precedent",
-      "excerpt": "China placed export limits on antimony, a related minor metal. Over the following months antimony shipments to the US fell roughly 97% and prices about doubled — a demonstration of how finely licensing can be targeted. (Reporting: Exiger; Andersen Institute.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": 1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n4",
-      "date": "2024-12-03",
-      "metals": [
-        "gallium",
-        "germanium"
-      ],
-      "headline": "China bans gallium and germanium exports to the United States",
-      "excerpt": "Licensing escalated to an outright ban on gallium, germanium and antimony exports specifically to the US, including processing technology. By May 2025 gallium traded well above pre-control levels. (Reporting: Fastmarkets; Skillings; Quest Metals.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": 3,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n5",
-      "date": "2024-11-15",
-      "metals": [
-        "lithium"
-      ],
-      "headline": "Lithium futures swing on CATL mine restart signal",
-      "excerpt": "News that CATL was preparing to restart its suspended Jianxiawo lithium mine drove an ~11% correction in Chinese lithium futures — a move analysts estimated exceeded the fundamental supply change several-fold, illustrating speculative amplification. (Reporting: Discovery Alert; Fastmarkets.)",
-      "strategies": [
-        "financialPositioning",
-        "permitThrottle"
-      ],
-      "lever": "financial",
-      "actors": [
-        "financial",
-        "endUser"
-      ],
-      "impact": -1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n6",
-      "date": "2024-12-31",
-      "metals": [
-        "lithium",
-        "nickel"
-      ],
-      "headline": "Producers curtail lithium and nickel output through 2024",
-      "excerpt": "After lithium fell from ~$71k/t toward ~$10k/t, Australian producers Pilbara Minerals and Mineral Resources curtailed output and mothballed assets; nickel operations were idled as low-cost Indonesian supply pressured prices. (Reporting: Reuters; Fastmarkets; MINING.com.)",
-      "strategies": [
-        "productionDiscipline"
-      ],
-      "lever": "physical",
-      "actors": [
-        "major"
-      ],
-      "impact": 1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n7",
-      "date": "2025-04-04",
-      "metals": [
-        "neodymium",
-        "dysprosium"
-      ],
-      "headline": "China places seven heavy rare earths under export control",
-      "excerpt": "China placed seven medium and heavy rare earths — including dysprosium and terbium — and related magnets under export control, applied to all countries. (Reporting: IEA; CSIS; RFF.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": 2,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n8",
-      "date": "2025-08-11",
-      "metals": [
-        "lithium"
-      ],
-      "headline": "CATL's Jianxiawo lithium mine suspended on permit expiry",
-      "excerpt": "CATL's Jianxiawo mine — on the order of 3–6% of global lithium supply — halted after its license expired. Lithium prices jumped and lithium equities rallied worldwide on expectations of broader production discipline. (Reporting: Bloomberg; Axios; Carbon Credits.)",
-      "strategies": [
-        "permitThrottle",
-        "producerCoordination"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "endUser"
-      ],
-      "impact": 2,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n9",
-      "date": "2025-10-15",
-      "metals": [
-        "neodymium",
-        "dysprosium"
-      ],
-      "headline": "US–Australia framework targets rare-earth stockpiles and finance",
-      "excerpt": "A US–Australia framework committed to heavy-rare-earth investment via strategic stockpiles, price support and a $1bn financing pledge, followed by an MoU with Malaysia. (Reporting: Global Policy Watch; CSIS.)",
-      "strategies": [
-        "stockpilePolicy"
-      ],
-      "lever": "accumulate",
-      "actors": [
-        "centralGov"
-      ],
-      "impact": 1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n10",
-      "date": "2025-11-07",
-      "metals": [
-        "gallium",
-        "germanium",
-        "neodymium",
-        "dysprosium"
-      ],
-      "headline": "China suspends rare-earth and gallium/germanium controls for one year",
-      "excerpt": "Following a US–China trade agreement, China suspended the October 2025 rare-earth controls and the US-specific gallium/germanium ban for roughly one year. The legal framework remains intact and could be reinstated. (Reporting: China-Briefing; Fastmarkets; Clark Hill.)",
-      "strategies": [
-        "exportControl"
-      ],
-      "lever": "tradePolicy",
-      "actors": [
-        "prodState",
-        "centralGov"
-      ],
-      "impact": -1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n11",
-      "date": "2025-12-01",
-      "metals": [
-        "platinum",
-        "palladium",
-        "rhodium"
-      ],
-      "headline": "South African PGM producers announce restructuring and shaft closures",
-      "excerpt": "Facing weak palladium and rhodium prices, major South African PGM producers announced restructuring, shaft closures and capital deferrals — output discipline in a market pressured by EV substitution. (Reporting: industry coverage; company statements.)",
-      "strategies": [
-        "productionDiscipline",
-        "producerCoordination"
-      ],
-      "lever": "physical",
-      "actors": [
-        "major",
-        "prodState"
-      ],
-      "impact": 1,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    },
-    {
-      "id": "n12",
-      "date": "2026-01-20",
-      "metals": [
-        "gold",
-        "silver"
-      ],
-      "headline": "Central-bank gold buying and ETF inflows extend the precious-metals bid",
-      "excerpt": "Surveys indicated the large majority of central banks expected to keep adding gold reserves, and ETF inflows continued — investment and reserve demand, more than mine supply, driving precious-metals prices. (Reporting: BlackRock; Goldman Sachs survey; Sprott.)",
-      "strategies": [
-        "financialPositioning"
-      ],
-      "lever": "financial",
-      "actors": [
-        "centralGov",
-        "financial"
-      ],
-      "impact": 2,
-      "source": "seed",
-      "tagStatus": "reviewed"
-    }
-  ]
-}
+[
+  {
+    "id": "n1",
+    "date": "2023-07-03",
+    "headline": "China announces export licensing on gallium and germanium",
+    "excerpt": "China's Ministry of Commerce announced that exporters of gallium and germanium products would need licenses from 1 August 2023, citing national security. Wrought-metal exports fell sharply the following month. (Reporting: USITC briefing; Reuters; Fastmarkets.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "gallium",
+      "germanium"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": 2,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n2",
+    "date": "2023-10-20",
+    "headline": "China extends export licensing to graphite products",
+    "excerpt": "China widened its licensing regime to cover certain graphite items, the dominant battery-anode material — applying the gallium/germanium playbook to a core battery input. (Reporting: Fastmarkets; China-Briefing.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "graphite"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": 1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n3",
+    "date": "2024-08-15",
+    "headline": "China restricts antimony exports — a precision precedent",
+    "excerpt": "China placed export limits on antimony, a related minor metal. Over the following months antimony shipments to the US fell roughly 97% and prices about doubled — a demonstration of how finely licensing can be targeted. (Reporting: Exiger; Andersen Institute.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "tin"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": 1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n4",
+    "date": "2024-12-03",
+    "headline": "China bans gallium and germanium exports to the United States",
+    "excerpt": "Licensing escalated to an outright ban on gallium, germanium and antimony exports specifically to the US, including processing technology. By May 2025 gallium traded well above pre-control levels. (Reporting: Fastmarkets; Skillings; Quest Metals.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "gallium",
+      "germanium"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": 3,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n5",
+    "date": "2024-11-15",
+    "headline": "Lithium futures swing on CATL mine restart signal",
+    "excerpt": "News that CATL was preparing to restart its suspended Jianxiawo lithium mine drove an ~11% correction in Chinese lithium futures — a move analysts estimated exceeded the fundamental supply change several-fold, illustrating speculative amplification. (Reporting: Discovery Alert; Fastmarkets.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "lithium"
+    ],
+    "strategies": [
+      "financialPositioning",
+      "permitThrottle"
+    ],
+    "lever": "financial",
+    "actors": [
+      "financial",
+      "endUser"
+    ],
+    "impact": -1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n6",
+    "date": "2024-12-31",
+    "headline": "Producers curtail lithium and nickel output through 2024",
+    "excerpt": "After lithium fell from ~$71k/t toward ~$10k/t, Australian producers Pilbara Minerals and Mineral Resources curtailed output and mothballed assets; nickel operations were idled as low-cost Indonesian supply pressured prices. (Reporting: Reuters; Fastmarkets; MINING.com.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "lithium",
+      "nickel"
+    ],
+    "strategies": [
+      "productionDiscipline"
+    ],
+    "lever": "physical",
+    "actors": [
+      "major"
+    ],
+    "impact": 1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n7",
+    "date": "2025-04-04",
+    "headline": "China places seven heavy rare earths under export control",
+    "excerpt": "China placed seven medium and heavy rare earths — including dysprosium and terbium — and related magnets under export control, applied to all countries. (Reporting: IEA; CSIS; RFF.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "neodymium",
+      "dysprosium"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": 2,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n8",
+    "date": "2025-08-11",
+    "headline": "CATL's Jianxiawo lithium mine suspended on permit expiry",
+    "excerpt": "CATL's Jianxiawo mine — on the order of 3–6% of global lithium supply — halted after its license expired. Lithium prices jumped and lithium equities rallied worldwide on expectations of broader production discipline. (Reporting: Bloomberg; Axios; Carbon Credits.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "lithium"
+    ],
+    "strategies": [
+      "permitThrottle",
+      "producerCoordination"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "endUser"
+    ],
+    "impact": 2,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n9",
+    "date": "2025-10-15",
+    "headline": "US–Australia framework targets rare-earth stockpiles and finance",
+    "excerpt": "A US–Australia framework committed to heavy-rare-earth investment via strategic stockpiles, price support and a $1bn financing pledge, followed by an MoU with Malaysia. (Reporting: Global Policy Watch; CSIS.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "neodymium",
+      "dysprosium"
+    ],
+    "strategies": [
+      "stockpilePolicy"
+    ],
+    "lever": "accumulate",
+    "actors": [
+      "centralGov"
+    ],
+    "impact": 1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n10",
+    "date": "2025-11-07",
+    "headline": "China suspends rare-earth and gallium/germanium controls for one year",
+    "excerpt": "Following a US–China trade agreement, China suspended the October 2025 rare-earth controls and the US-specific gallium/germanium ban for roughly one year. The legal framework remains intact and could be reinstated. (Reporting: China-Briefing; Fastmarkets; Clark Hill.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "gallium",
+      "germanium",
+      "neodymium",
+      "dysprosium"
+    ],
+    "strategies": [
+      "exportControl"
+    ],
+    "lever": "tradePolicy",
+    "actors": [
+      "prodState",
+      "centralGov"
+    ],
+    "impact": -1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n11",
+    "date": "2025-12-01",
+    "headline": "South African PGM producers announce restructuring and shaft closures",
+    "excerpt": "Facing weak palladium and rhodium prices, major South African PGM producers announced restructuring, shaft closures and capital deferrals — output discipline in a market pressured by EV substitution. (Reporting: industry coverage; company statements.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "platinum",
+      "palladium",
+      "rhodium"
+    ],
+    "strategies": [
+      "productionDiscipline",
+      "producerCoordination"
+    ],
+    "lever": "physical",
+    "actors": [
+      "major",
+      "prodState"
+    ],
+    "impact": 1,
+    "tagStatus": "reviewed"
+  },
+  {
+    "id": "n12",
+    "date": "2026-01-20",
+    "headline": "Central-bank gold buying and ETF inflows extend the precious-metals bid",
+    "excerpt": "Surveys indicated the large majority of central banks expected to keep adding gold reserves, and ETF inflows continued — investment and reserve demand, more than mine supply, driving precious-metals prices. (Reporting: BlackRock; Goldman Sachs survey; Sprott.)",
+    "url": "",
+    "source": "seed",
+    "metals": [
+      "gold",
+      "silver"
+    ],
+    "strategies": [
+      "financialPositioning"
+    ],
+    "lever": "financial",
+    "actors": [
+      "centralGov",
+      "financial"
+    ],
+    "impact": 2,
+    "tagStatus": "reviewed"
+  }
+]

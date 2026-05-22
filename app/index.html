@@ -679,13 +679,14 @@ async function init() {
     ]);
 
   METALS = metals.metals;  GROUPS = metals.groups;  DATA = metals.data;
-  COUNTRIES = worldmap.countries;  WORLD_PATHS = worldmap.worldPaths;  FLOWS = worldmap.flows;
+  COUNTRIES = metals.countries;  FLOWS = metals.flows;  // §2.1: countries/flows live in metals.json
+  WORLD_PATHS = worldmap.worldPaths;                     // worldmap.json is geometry only
   ACTORS = matrix.actors;  LEVERS = matrix.levers;  MATRIX = matrix.matrix;  MATRIX_READING = matrix.reading;
   STRATEGY_FAMILIES = strategy.families;  STRATEGIES = strategy.strategies;
   BASKETS = instruments.baskets;  INSTRUMENTS = instruments.instruments;
   PROJECTION = projection;  WINLOSE = winlose;
-  PRICES = prices.prices;   // overlay (fetched; render-wiring deferred to Sprint 3 — see D1)
-  NEWS = news.events;       // news dock renders from here (replaces inline NEWS)
+  PRICES = prices;          // §3 flat array (fetched; render-wiring deferred to Sprint 3 — see D1)
+  NEWS = news;              // §3 flat array; news dock renders from here (replaces inline NEWS)
 
   // STRATEGY_INDEX is runtime-derived (was an IIFE in the prototype) — rebuild it here.
   STRATEGY_INDEX = (() => {
