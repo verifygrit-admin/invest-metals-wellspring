@@ -2203,6 +2203,53 @@ const WORLD_PATHS = [
 
 </script>
 <script>
+/* ---------- data layer (Sprint 2: fetched from /data) ---------- */
+const DATA_BASE = 'data'; // siblings of index.html at deploy time (deploy.yml: cp -r data/. _site/data/)
+
+// Populated by init(); render functions read these names unchanged.
+let METALS, GROUPS, DATA, COUNTRIES, WORLD_PATHS, FLOWS,
+    ACTORS, LEVERS, MATRIX, MATRIX_READING,
+    STRATEGY_FAMILIES, STRATEGIES, STRATEGY_INDEX,
+    BASKETS, INSTRUMENTS, PROJECTION, WINLOSE, NEWS,
+    PRICES; // PRICES = prices.json overlay (fetched; render wiring deferred to Sprint 3)
+
+async function fetchJson(name) {
+  const res = await fetch(`${DATA_BASE}/${name}`);
+  if (!res.ok) throw new Error(`Failed to fetch ${name}: HTTP ${res.status}`);
+  return res.json();
+}
+
+async function init() {
+  const [metals, worldmap, matrix, strategy, instruments, projection, winlose] =
+    await Promise.all([
+      fetchJson('metals.json'), fetchJson('worldmap.json'), fetchJson('matrix.json'),
+      fetchJson('strategy.json'), fetchJson('instruments.json'),
+      fetchJson('projection.json'), fetchJson('winlose.json')
+    ]);
+
+  METALS = metals.metals;  GROUPS = metals.groups;  DATA = metals.data;
+  COUNTRIES = worldmap.countries;  WORLD_PATHS = worldmap.worldPaths;  FLOWS = worldmap.flows;
+  ACTORS = matrix.actors;  LEVERS = matrix.levers;  MATRIX = matrix.matrix;  MATRIX_READING = matrix.reading;
+  STRATEGY_FAMILIES = strategy.families;  STRATEGIES = strategy.strategies;
+  BASKETS = instruments.baskets;  INSTRUMENTS = instruments.instruments;
+  PROJECTION = projection;  WINLOSE = winlose;
+
+  // STRATEGY_INDEX is runtime-derived (was an IIFE in the prototype) — rebuild it here.
+  STRATEGY_INDEX = (() => {
+    const idx = {};
+    Object.entries(STRATEGIES).forEach(([sk, s]) => {
+      s.instances.forEach(inst => inst.metals.forEach(mk => {
+        (idx[mk] = idx[mk] || new Set()).add(sk);
+      }));
+    });
+    Object.keys(idx).forEach(mk => { idx[mk] = [...idx[mk]]; });
+    return idx;
+  })();
+
+  buildSidebar();   // sidebar build is moved into a function (Task 4)
+  refresh();
+}
+
 /* ---------- projection ---------- */
 const VB_W=860, VB_H=420;
 function project(lon,lat){
@@ -3057,7 +3104,10 @@ function openDetail(countryKey){
   document.getElementById('detail').classList.add('open');
 }
 
-refresh();
+init().catch(err => {
+  document.getElementById('toolMeta').textContent = 'Data failed to load — see console.';
+  console.error(err);
+});
 </script>
 </body>
 </html>
