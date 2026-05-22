@@ -6,7 +6,7 @@
     "generate": "node tools/generate-data.mjs",
     "validate": "node tools/validate-all.mjs",
     "test": "node --test",
-    "build:site": "rm -rf _site && mkdir -p _site && cp -r app/. _site/ && cp -r data/. _site/data/",
+    "build:site": "node tools/build-site.mjs",
     "serve": "npx --yes serve _site"
   },
   "devDependencies": {

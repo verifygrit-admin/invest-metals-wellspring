@@ -670,11 +670,12 @@ async function fetchJson(name) {
 }
 
 async function init() {
-  const [metals, worldmap, matrix, strategy, instruments, projection, winlose] =
+  const [metals, worldmap, matrix, strategy, instruments, projection, winlose, prices, news] =
     await Promise.all([
       fetchJson('metals.json'), fetchJson('worldmap.json'), fetchJson('matrix.json'),
       fetchJson('strategy.json'), fetchJson('instruments.json'),
-      fetchJson('projection.json'), fetchJson('winlose.json')
+      fetchJson('projection.json'), fetchJson('winlose.json'),
+      fetchJson('prices.json'), fetchJson('news.json')
     ]);
 
   METALS = metals.metals;  GROUPS = metals.groups;  DATA = metals.data;
@@ -683,6 +684,8 @@ async function init() {
   STRATEGY_FAMILIES = strategy.families;  STRATEGIES = strategy.strategies;
   BASKETS = instruments.baskets;  INSTRUMENTS = instruments.instruments;
   PROJECTION = projection;  WINLOSE = winlose;
+  PRICES = prices.prices;   // overlay (fetched; render-wiring deferred to Sprint 3 — see D1)
+  NEWS = news.events;       // news dock renders from here (replaces inline NEWS)
 
   // STRATEGY_INDEX is runtime-derived (was an IIFE in the prototype) — rebuild it here.
   STRATEGY_INDEX = (() => {

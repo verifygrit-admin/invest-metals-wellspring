@@ -53,3 +53,33 @@ test('projection.json round-trips terminal.js PROJECTION', () => {
 test('winlose.json round-trips terminal.js WINLOSE', () => {
   assert.deepEqual(read('winlose.json'), data.WINLOSE);
 });
+
+test('prices.json uses `change` (A1) and covers every non-note ticker', () => {
+  const f = read('prices.json');
+  assert.equal(f.source, 'seed');
+  assert.ok(f.asOf);
+  // build the expected ticker set from the prototype
+  const expected = new Set();
+  for (const list of Object.values(data.INSTRUMENTS))
+    for (const ins of list) if (ins.type !== 'note' && ins.price != null) expected.add(ins.ticker);
+  assert.deepEqual(new Set(Object.keys(f.prices)), expected);
+  // spot-check the rename + value fidelity
+  assert.deepEqual(f.prices.GLD, { price: 272.40, change: 0.6 });
+  for (const v of Object.values(f.prices)) {
+    assert.ok('change' in v && !('chg' in v), 'overlay must use `change`, never `chg`');
+  }
+});
+
+test('news.json carries 12 events with A2 seed fields', () => {
+  const f = read('news.json');
+  assert.equal(f.events.length, 12);
+  for (const ev of f.events) {
+    assert.equal(ev.source, 'seed');
+    assert.equal(ev.tagStatus, 'reviewed');
+  }
+  // payload fidelity: stripping the two added fields reproduces the prototype event
+  f.events.forEach((ev, i) => {
+    const { source, tagStatus, ...rest } = ev;
+    assert.deepEqual(rest, data.NEWS[i]);
+  });
+});

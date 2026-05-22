@@ -6,7 +6,10 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import vm from 'node:vm';
 
-const HTML_PATH = fileURLToPath(new URL('../app/index.html', import.meta.url));
+// Canonical transcription source: the pristine prototype. app/index.html is
+// refactored in Sprint 2 (inline data removed), so it cannot be the source —
+// assets/metals_geographic_outlook.html keeps the original inline data blocks.
+const HTML_PATH = fileURLToPath(new URL('../assets/metals_geographic_outlook.html', import.meta.url));
 
 // Names defined by the data blocks that we want to capture.
 const DATA_GLOBALS = [

@@ -17,7 +17,20 @@ write('instruments.json', { baskets: d.BASKETS, instruments: d.INSTRUMENTS });
 write('projection.json',  d.PROJECTION);
 write('winlose.json',     d.WINLOSE);
 
-// ---- two feed placeholders (Goal 4) — implemented in Task 6 ----
-// prices.json and news.json are added to this generator in Task 6.
+// ---- prices.json (A1): ticker-keyed overlay, `change` not `chg`, non-note tickers only ----
+const ASOF = '2026-05-22T00:00:00Z';
+const prices = {};
+for (const list of Object.values(d.INSTRUMENTS)) {
+  for (const ins of list) {
+    if (ins.type === 'note' || ins.price == null) continue; // skip note rows
+    if (prices[ins.ticker]) continue;                        // dedupe across metals
+    prices[ins.ticker] = { price: ins.price, change: ins.chg }; // chg -> change
+  }
+}
+write('prices.json', { asOf: ASOF, source: 'seed', prices });
+
+// ---- news.json (A2): 12 events verbatim + source/tagStatus ----
+const events = d.NEWS.map(ev => ({ ...ev, source: 'seed', tagStatus: 'reviewed' }));
+write('news.json', { asOf: ASOF, events });
 
 console.log('Static data files generated.');
